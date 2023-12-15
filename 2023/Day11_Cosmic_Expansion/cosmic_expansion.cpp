@@ -7,6 +7,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
+//time to solve: 4.8986ms
 
 struct coord {
     int x;
@@ -14,7 +15,6 @@ struct coord {
     int x_exp_coef = 0;
     int y_exp_coef = 0;
 };
-
 
 char **get_cosmos(std::string, int *, int *);
 void print_cosmos(char **);

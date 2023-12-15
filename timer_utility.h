@@ -17,10 +17,15 @@ class TimerUtility {
             setEndTime();
             setDuration();
             if(duration_ms.count() >= 1000) {
-                std::cout << duration_ms.count() / 1000 << "s: " << comment << std::endl;
+                std::cout << duration_ms.count() / 1000 << "s";
             } else {
-                std::cout << duration_ms.count() << "ms: " << comment << std::endl;
-            }  
+                std::cout << duration_ms.count() << "ms";
+            }
+            if(comment.length()) {
+            std::cout << ": " << comment;
+            }
+
+            std::cout << '\n';
         }
 
     private:
@@ -36,3 +41,5 @@ class TimerUtility {
             duration_ms = end - start;
         }
 };
+
+// #include"../../timer_utility.h"

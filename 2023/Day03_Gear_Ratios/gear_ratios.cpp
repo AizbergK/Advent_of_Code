@@ -3,29 +3,33 @@
 #include<string.h>
 #include<string>
 #include<math.h>
+#include"../../timer_utility.h"
 
-using namespace std;
+TimerUtility program_timer;
+//time to solve: 1.8353ms
 
-int line_check(string, string, string);
-bool number_check(string, int, int);
-int line_check_gears(string, string ,string);
-int gear_ratio(string, int, int*);
+int line_check(std::string, std::string, std::string);
+bool number_check(std::string, int, int);
+int line_check_gears(std::string, std::string ,std::string);
+int gear_ratio(std::string, int, int*);
 
 int main() {
 
-    ifstream input;
+    program_timer.startTimer();
+
+    std::ifstream input;
     input.open("./input.txt");
 
-    string first_line;
-    string second_line;
-    string third_line;
+    std::string first_line;
+    std::string second_line;
+    std::string third_line;
     
     int number, j, sum = 0, counter = 0, total_prod = 0, prod = 0;
     bool is_part_number = false;
 
     input >> second_line >> third_line;
 
-    string dummy_string = string(second_line.length(), '.');
+    std::string dummy_string = std::string(second_line.length(), '.');
 
     sum += line_check(second_line, dummy_string, third_line);
     total_prod += line_check_gears(second_line, dummy_string, third_line);
@@ -42,13 +46,14 @@ int main() {
     sum += line_check(third_line, second_line, dummy_string);
     total_prod += line_check_gears(third_line, second_line, dummy_string);
 
-    cout << total_prod << endl;
-    // cout << sum;
+    std::cout << total_prod << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }
 
-int line_check(string main_line, string top_line, string bottom_line) {
+int line_check(std::string main_line, std::string top_line, std::string bottom_line) {
 
     int sum = 0, number = 0, j = 0;
     bool is_part_number = false;
@@ -92,7 +97,7 @@ int line_check(string main_line, string top_line, string bottom_line) {
     return sum;
 }
 
-bool number_check(string adjacent_line, int start, int stop) {
+bool number_check(std::string adjacent_line, int start, int stop) {
 
     if(start > 0 && adjacent_line[start - 1] != 46 && (adjacent_line[start - 1] < 48 || adjacent_line[start - 1] > 57 )) {
         return true;
@@ -111,7 +116,7 @@ bool number_check(string adjacent_line, int start, int stop) {
         return false;
 }
 
-int line_check_gears(string main_line, string top_line, string bottom_line) {
+int line_check_gears(std::string main_line, std::string top_line, std::string bottom_line) {
 
     int total_line_prod = 0, prod = 1, number = 0, counter = 0;
     bool is_part_number = false;
@@ -159,7 +164,7 @@ int line_check_gears(string main_line, string top_line, string bottom_line) {
         
 }
 
-int gear_ratio(string adjacent_line, int i, int* counter) {
+int gear_ratio(std::string adjacent_line, int i, int* counter) {
 
     int number1 = 0, number2 = 0;
 

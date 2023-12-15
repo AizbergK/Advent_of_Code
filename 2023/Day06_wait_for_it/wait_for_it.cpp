@@ -1,45 +1,74 @@
 #include<iostream>
 #include<fstream>
+#include<vector>
+#include<string>
+#include"../../timer_utility.h"
 
-using namespace std;
+TimerUtility program_timer;
+//time to solve: 1.7252ms
 
 long long int race_win_nr(long long int, long long int);
+long long concat_strings_to_int(std::vector<std::string> *);
 
 int main() {
 
-    int total = 1;
+    program_timer.startTimer();
 
-    // int n = 3;
-    // int time[3] = {7, 15, 30};
-    // int dist[3] = {9, 40, 200};
+    std::ifstream input;
+    input.open("./input.txt");
+    std::string temp_string;
+    int temp_number;
 
-    int n = 4;
-    int time[4] = {42, 68, 69, 85};
-    int dist[4] = {284, 1005, 1122, 1341};
+    std::vector<std::string> time, dist;
 
-    for (int i = 0; i < n; i++){
-        total *= race_win_nr(time[i], dist[i]);
+    input >> temp_string;
+    input >> temp_string;
+    while (temp_string != "Distance:") {
+        time.push_back(temp_string);
+        input >> temp_string;
+    }
+    while (input >> temp_string) {
+        dist.push_back(temp_string);
     }
 
-    // cout << total;
+    int total = 1;
 
-    // cout << race_win_nr(71530, 940200);
+    for (int i = 0; i < time.size(); i++){
+        total *= race_win_nr(std::stoll(time[i]), std::stoll(dist[i]));
+    }
 
-    cout << race_win_nr(42686985, 284100511221341);
+    std::cout << total << std::endl << race_win_nr(concat_strings_to_int(&time), concat_strings_to_int(&dist)) << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }
 
+long long concat_strings_to_int(std::vector<std::string>* number_string) {
+
+    long long concat_number;
+    std::string concat_string = "";
+
+    for (int i = 0; i < number_string->size(); i++)
+    {
+        concat_string += (*number_string)[i];
+    }
+
+    concat_number = std::stoll(concat_string);
+
+    return concat_number;
+}
+
 long long int race_win_nr(long long int time,long long int distance) {
 
-    long long int total = 0, speed;
+    long long int total, start_interval;
 
-    for (int i = 0; i < time; i++) {
-        speed = i;
-        if((time - i) * speed > distance) {
-            total++;
+    for(int i = (distance / time); i < time; i++) {
+        if((time - i) * i > distance) {
+            total = time + 1 - 2 * i;
+            break;
         }
     }
 
-        return total;
+    return total;
 }

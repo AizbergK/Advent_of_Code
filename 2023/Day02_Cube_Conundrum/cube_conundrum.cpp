@@ -2,46 +2,52 @@
 #include<iostream>
 #include<string.h>
 #include<regex>
+#include"../../timer_utility.h"
 
-using namespace std;
+TimerUtility program_timer;
+//time to solve: 1.5029ms
 
-bool game_check(string, int*, int*);
-bool subset_check(string, int*, int*);
+bool game_check(std::string, int*, int*);
+bool subset_check(std::string, int*, int*);
 
 int main() {
 
-    ifstream input;
+    program_timer.startTimer();
+
+    std::ifstream input;
     input.open("./input.txt");
 
     int id_sum = 0, id_counter = 0, power_sum = 0, power;
     int cubes_max[3] = {12, 13, 14}; // red, green, blue
 
-    string game;
+    std::string game;
 
     while(!input.eof()) {
         id_counter++;
-        getline(input, game);
+        std::getline(input, game);
         if(game_check(game.substr((game.find(':')) + 2), cubes_max, &power)) {
             id_sum += id_counter;
         };
         power_sum += power;
     }
 
-    cout << id_sum << " id sum" << endl;
-    cout << power_sum << " power sum" << endl;
+    std::cout << id_sum << " id sum" << std::endl;
+    std::cout << power_sum << " power sum" << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }
 
-bool game_check(string game, int* cubes_max, int *power) {
+bool game_check(std::string game, int* cubes_max, int *power) {
 
-    regex word("; || ,");
+    std::regex word("; || ,");
     int substring_start = 0;
     int cube_min_nr[3] = {0, 0, 0};
     bool is_possible = true;
 
-    string substring = game.substr(0, game.find_first_of(";,"));
-    while (game.find_first_of(";,", substring_start) != string::npos)
+    std::string substring = game.substr(0, game.find_first_of(";,"));
+    while (game.find_first_of(";,", substring_start) != std::string::npos)
     {
         substring_start = game.find_first_of(";,", substring_start + 2);
         is_possible = subset_check(substring, cubes_max, cube_min_nr);
@@ -52,12 +58,12 @@ bool game_check(string game, int* cubes_max, int *power) {
     return is_possible;
 }
 
-bool subset_check(string substring, int* cubes_max, int* cubes_min_nr) {
+bool subset_check(std::string substring, int* cubes_max, int* cubes_min_nr) {
 
-    int cubes = stoi(substring);
+    int cubes = std::stoi(substring);
     bool is_possible = true;
 
-    if(substring.find("red") != string::npos) {
+    if(substring.find("red") != std::string::npos) {
         if(cubes > cubes_max[0]) {
             is_possible = false;
         }
@@ -66,7 +72,7 @@ bool subset_check(string substring, int* cubes_max, int* cubes_min_nr) {
         }
     }
         
-    if(substring.find("green") != string::npos) {
+    if(substring.find("green") != std::string::npos) {
         if(cubes > cubes_max[1]){
             is_possible = false;
         }
@@ -75,7 +81,7 @@ bool subset_check(string substring, int* cubes_max, int* cubes_min_nr) {
         }
     }
 
-    if(substring.find("blue") != string::npos) {
+    if(substring.find("blue") != std::string::npos) {
         if(cubes > cubes_max[2]){
             is_possible = false;
         }

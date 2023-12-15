@@ -4,20 +4,24 @@
 #include<string.h>
 #include<math.h>
 #include<vector>
+#include"../../timer_utility.h"
 
-using namespace std;
+TimerUtility program_timer;
+//time to solve: 2.4851ms
 
-void extract_numbers(string, vector<int>*, vector<int>*);
-int verify_card(vector<int>, vector<int>);
-void count_cards(vector<int>*, int, int);
-int add_total(vector<int> *, int);
+void extract_numbers(std::string, std::vector<int>*, std::vector<int>*);
+int verify_card(std::vector<int>, std::vector<int>);
+void count_cards(std::vector<int>*, int, int);
+int add_total(std::vector<int> *, int);
 
 int main() {
 
-    ifstream input;
+    program_timer.startTimer();
+
+    std::ifstream input;
     input.open("./input.txt");
-    string card;
-    vector<int> lucky_numbers, card_numbers, cards_total(10000, 1);
+    std::string card;
+    std::vector<int> lucky_numbers, card_numbers, cards_total(10000, 1);
     int total = 0, count, i = 0;
 
     while(!input.eof()) {
@@ -31,12 +35,14 @@ int main() {
         i++;
     }
 
-    cout << total << endl << add_total(&cards_total, i);
+    std::cout << total << std::endl << add_total(&cards_total, i) << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }
 
-void extract_numbers(string card, vector<int> *lucky_numbers, vector<int> *card_numbers) {
+void extract_numbers(std::string card, std::vector<int> *lucky_numbers, std::vector<int> *card_numbers) {
 
     int next_number,
     start = card.find(":") + 2, 
@@ -60,7 +66,7 @@ void extract_numbers(string card, vector<int> *lucky_numbers, vector<int> *card_
     return;
 }
 
-int verify_card(vector<int> lucky_numbers, vector<int> card_numbers) {
+int verify_card(std::vector<int> lucky_numbers, std::vector<int> card_numbers) {
 
     int score = 0, power = -1;
 
@@ -74,7 +80,7 @@ int verify_card(vector<int> lucky_numbers, vector<int> card_numbers) {
     return power;
 }
 
-void count_cards(vector<int>* total_cards, int current_pos, int count) {
+void count_cards(std::vector<int>* total_cards, int current_pos, int count) {
 
     for (int i = current_pos + 1; i <= current_pos + count; i++) {
         (*total_cards)[i] += (*total_cards)[current_pos];
@@ -83,7 +89,7 @@ void count_cards(vector<int>* total_cards, int current_pos, int count) {
     return;
 }
 
-int add_total(vector<int>* total_cards, int nr_of_cards) {
+int add_total(std::vector<int>* total_cards, int nr_of_cards) {
 
     int total = 0;
 

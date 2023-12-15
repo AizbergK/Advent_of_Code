@@ -4,6 +4,9 @@
 #include<string>
 #include"../../timer_utility.h"
 
+TimerUtility total_timer;
+//time to solve: 12.4384ms
+
 struct pipe {
     bool north = false;
     bool south = false;
@@ -15,9 +18,6 @@ struct dimensions {
     int width;
     int height;
 };
-
-TimerUtility total_timer, part1_timer, part2_timer;
-
 
 int run_maze(dimensions, std::vector<std::vector<pipe>>*, std::vector<std::vector<bool>>*);
 void advance(dimensions*, pipe*, std::vector<std::vector<pipe>>*);
@@ -31,7 +31,6 @@ bool check_direction(char, char);
 int main() {
 
     total_timer.startTimer();
-    part1_timer.startTimer();
 
     std::string file_name = "./input.txt";
     int maze_length, contained_spaces;
@@ -96,9 +95,6 @@ int main() {
 
     std::cout << maze_length << std::endl;
 
-    part1_timer.getDuration("part1");
-    part2_timer.startTimer();
-
     input.open(file_name);
 
     start_char = get_start_pipe_char(define_start_pipe(start_coord, &maze));
@@ -125,8 +121,7 @@ int main() {
 
     std::cout << contained_spaces << std::endl;
 
-    part2_timer.getDuration("part2");
-    total_timer.getDuration("total");
+    total_timer.getDuration();
 
     return 0;
 }

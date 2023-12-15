@@ -4,6 +4,10 @@
 #include<string>
 #include<vector>
 #include<numeric>
+#include"../../timer_utility.h"
+
+TimerUtility program_timer;
+//time to solve: 145.453ms
 
 struct node_data
 {
@@ -25,6 +29,8 @@ bool check_loop(int, int);
 long long get_lcm(std::vector<int>);
 
 int main() {
+
+    program_timer.startTimer();
 
     std::ifstream input;
     input.open("./input.txt");
@@ -55,7 +61,9 @@ int main() {
         ends_in_Z.push_back(get_all_ends_in_Z(start_nodes[i].hash, instruction, node_list));
     }
 
-    std::cout << get_lcm(ends_in_Z);
+    std::cout << get_lcm(ends_in_Z) << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }

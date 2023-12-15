@@ -5,7 +5,10 @@
 #include<ctype.h>
 #include<string.h>
 #include<vector>
-#include<chrono>
+#include"../../timer_utility.h"
+
+TimerUtility program_timer;
+//time to solve: 0.9348ms
 
 struct map_range{
     long long start;
@@ -22,7 +25,7 @@ long long get_seed_range_location(std::pair<long long, long long>, std::vector<s
 
 int main() {
 
-    auto start = std::chrono::high_resolution_clock::now();
+    program_timer.startTimer();
 
     std::ifstream input;
     input.open("./input.txt");
@@ -46,11 +49,7 @@ int main() {
     }
     std::cout << get_minimum_location(locations_ranges) << std::endl;
 
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> duration = end - start;
-
-    // Print the duration in seconds
-    std::cout << "Execution time: " << duration.count() << " seconds." << std::endl;
+    program_timer.getDuration();
 
     return 0;
 }

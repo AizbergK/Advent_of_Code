@@ -2,12 +2,18 @@
 #include<fstream>
 #include<sstream>
 #include<vector>
+#include"../../timer_utility.h"
+
+TimerUtility program_timer;
+//time to solve: 14.3289ms
 
 std::pair<int, int> get_prediction(std::vector<int>);
 std::vector<int> get_next_sequence(std::vector<int>);
 bool is_sequence_zero(std::vector<int>);
 
 int main() {
+
+    program_timer.startTimer();
 
     std::ifstream input;
     input.open("./input.txt");
@@ -26,7 +32,9 @@ int main() {
         sequence.clear();
     }
 
-    std::cout << total_right << std::endl << total_left;
+    std::cout << total_right << std::endl << total_left << std::endl;
+
+    program_timer.getDuration();
 
     return 0;
 }

@@ -1,33 +1,39 @@
 #include<iostream>
 #include<fstream>
 #include<string.h>
+#include"../../timer_utility.h"
 
-using namespace std;
+TimerUtility program_timer;
+//time to solve: 3.4286ms
 
-int calibration_value(string , ofstream&);
+int calibration_value(std::string , std::ofstream&);
 
 int main() {
 
-    ifstream input;
-    ofstream output("./output_test.txt");
+    program_timer.startTimer();
+
+    std::ifstream input;
+    std::ofstream output("./output_test.txt");
     input.open("./input.txt");
 
     int sum_calibration = 0;
-    string calibration_string;
+    std::string calibration_string;
 
     while(!input.eof()) {
         input >> calibration_string;
         sum_calibration += calibration_value(calibration_string, output);
     }
 
-    std::cout << sum_calibration;
+    std::cout << sum_calibration << std::endl;
 
     output.close();
+
+    program_timer.getDuration();
 
     return 0;
 }
 
-int calibration_value(string calibration_string, ofstream& output) {
+int calibration_value(std::string calibration_string, std::ofstream& output) {
     int value = 0, min_pos = calibration_string.length(), max_pos = 0, min_pos_number = 0, max_pos_number = 0;
     const char *numbers[10] = 
     {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
@@ -78,7 +84,7 @@ int calibration_value(string calibration_string, ofstream& output) {
     value += min_pos_number * 10;
     value += max_pos_number;
 
-    output << value << ' ' << calibration_string << endl;
+    output << value << ' ' << calibration_string << std::endl;
 
     return value;
 }

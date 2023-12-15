@@ -3,6 +3,10 @@
 #include<vector>
 #include<math.h>
 #include<algorithm>
+#include"../../timer_utility.h"
+
+TimerUtility program_timer;
+//time to solve: 3.0587ms
 
 struct card {
     std::string hand;
@@ -20,6 +24,8 @@ bool sort_func(card, card);
 void joker(std::vector<std::pair<char, int>>*);
 
 int main() {
+
+    program_timer.startTimer();
 
     std::vector<card> game;
     card individual_hand;
@@ -40,11 +46,9 @@ int main() {
 
     std::sort(game.begin(), game.end(), sort_func);
 
-    // for (int i = 0; i < game.size(); i++) {
-    //     game[i].rank = game.size() - i;
-    // }
+    std::cout << total_pot(game) << std::endl;
 
-        std::cout << total_pot(game);
+    program_timer.getDuration();
 
     return 0;
 }
@@ -210,7 +214,6 @@ long long total_pot(std::vector<card> game) {
         bid = game[i].bid;
         rank = i + 1;
         total += bid * rank;
-        std::cout << bid << ' ' << rank << std::endl;
     }
 
     return total;
