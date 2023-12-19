@@ -13,7 +13,7 @@ int main() {
     program_timer.startTimer();
 
     std::ifstream input;
-    std::ofstream output("./output_test.txt");
+    std::ofstream output("./output.txt");
     input.open("./input.txt");
 
     int sum_calibration = 0;

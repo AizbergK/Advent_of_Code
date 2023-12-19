@@ -6,7 +6,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 1.8353ms
+//time to solve: 0.4721ms
 
 int line_check(std::string, std::string, std::string);
 bool number_check(std::string, int, int);

@@ -8,7 +8,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 0.9348ms
+//time to solve: 0.7152ms
 
 struct map_range{
     long long start;

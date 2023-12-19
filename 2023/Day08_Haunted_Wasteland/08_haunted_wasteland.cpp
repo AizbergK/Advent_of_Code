@@ -7,7 +7,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 145.453ms
+//time to solve: 6.9237ms
 
 struct node_data
 {

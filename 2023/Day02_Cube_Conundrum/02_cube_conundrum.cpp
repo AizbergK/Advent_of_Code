@@ -5,7 +5,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 1.5029ms
+//time to solve: 0.927ms
 
 bool game_check(std::string, int*, int*);
 bool subset_check(std::string, int*, int*);

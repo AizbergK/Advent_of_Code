@@ -6,7 +6,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 3.0587ms
+//time to solve: 2.003ms
 
 struct card {
     std::string hand;

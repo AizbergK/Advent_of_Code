@@ -7,7 +7,7 @@
 #include"../../timer_utility.h"
 
 TimerUtility program_timer;
-//time to solve: 2.4851ms
+//time to solve: 1.36ms
 
 void extract_numbers(std::string, std::vector<int>*, std::vector<int>*);
 int verify_card(std::vector<int>, std::vector<int>);
