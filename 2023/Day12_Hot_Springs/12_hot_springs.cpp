@@ -21,7 +21,7 @@ int main() {
     program_timer.startTimer();
 
     std::ifstream input;
-    input.open("./test.txt");
+    input.open("./input.txt");
     std::ofstream output;
     // output.open("./output.txt");
 
@@ -37,15 +37,15 @@ int main() {
         recursive_count(0, &accumulator_folded, &test_string, &max_index_pos, 0);
         // output << accumulator_folded - temp_test << std::endl;
 
-        //part2
-        // unfold_line(&test_string, &max_index_pos);
-        // run_timer.startTimer();
-        // recursive_count(0, &accumulator_unfolded, &test_string, &max_index_pos, 0);
-        // run_timer.getDuration();
+        // part2
+        unfold_line(&test_string, &max_index_pos);
+        run_timer.startTimer();
+        recursive_count(0, &accumulator_unfolded, &test_string, &max_index_pos, 0);
+        run_timer.getDuration();
     }
 
     std::cout << accumulator_folded << std::endl;
-    // std::cout << accumulator_unfolded << std::endl;
+    std::cout << accumulator_unfolded << std::endl;
 
     program_timer.getDuration();
 
