@@ -4,15 +4,15 @@
 #include<string>
 #include"../../timer_utility.h"
 
+TimerUtility program_timer;
+//time to solve: 0.9552ms
+
 void get_input_data(std::ifstream *, std::vector<std::string> *, std::vector<std::string> *);
 int verify_symmetry(std::vector<std::string> *);
 bool symmetry_case(std::vector<std::string> *, int);
 int verify_symmetry_smudge(std::vector<std::string> *);
 bool symmetry_case_smudge(std::vector<std::string> *, int);
 bool differs_by_one(std::string, std::string);
-
-TimerUtility program_timer;
-//time to solve: 0.9552ms
 
 int main() {
 
