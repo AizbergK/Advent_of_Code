@@ -1,16 +1,17 @@
-#include<fstream>
-#include<iostream>
-#include<string.h>
-#include<regex>
-#include"../../timer_utility.h"
+#include "../../timer_utility.h"
+#include <fstream>
+#include <iostream>
+#include <regex>
+#include <string.h>
 
 TimerUtility program_timer;
-//time to solve: 0.927ms
+// time to solve: 0.927ms
 
-bool game_check(std::string, int*, int*);
-bool subset_check(std::string, int*, int*);
+bool game_check(std::string, int *, int *);
+bool subset_check(std::string, int *, int *);
 
-int main() {
+int main()
+{
 
     program_timer.startTimer();
 
@@ -22,10 +23,12 @@ int main() {
 
     std::string game;
 
-    while(!input.eof()) {
+    while (!input.eof())
+    {
         id_counter++;
         std::getline(input, game);
-        if(game_check(game.substr((game.find(':')) + 2), cubes_max, &power)) {
+        if (game_check(game.substr((game.find(':')) + 2), cubes_max, &power))
+        {
             id_sum += id_counter;
         };
         power_sum += power;
@@ -39,7 +42,8 @@ int main() {
     return 0;
 }
 
-bool game_check(std::string game, int* cubes_max, int *power) {
+bool game_check(std::string game, int *cubes_max, int *power)
+{
 
     std::regex word("; || ,");
     int substring_start = 0;
@@ -58,34 +62,44 @@ bool game_check(std::string game, int* cubes_max, int *power) {
     return is_possible;
 }
 
-bool subset_check(std::string substring, int* cubes_max, int* cubes_min_nr) {
+bool subset_check(std::string substring, int *cubes_max, int *cubes_min_nr)
+{
 
     int cubes = std::stoi(substring);
     bool is_possible = true;
 
-    if(substring.find("red") != std::string::npos) {
-        if(cubes > cubes_max[0]) {
+    if (substring.find("red") != std::string::npos)
+    {
+        if (cubes > cubes_max[0])
+        {
             is_possible = false;
         }
-        if(cubes > cubes_min_nr[0]) {
+        if (cubes > cubes_min_nr[0])
+        {
             cubes_min_nr[0] = cubes;
         }
     }
-        
-    if(substring.find("green") != std::string::npos) {
-        if(cubes > cubes_max[1]){
+
+    if (substring.find("green") != std::string::npos)
+    {
+        if (cubes > cubes_max[1])
+        {
             is_possible = false;
         }
-        if(cubes > cubes_min_nr[1]) {
+        if (cubes > cubes_min_nr[1])
+        {
             cubes_min_nr[1] = cubes;
         }
     }
 
-    if(substring.find("blue") != std::string::npos) {
-        if(cubes > cubes_max[2]){
+    if (substring.find("blue") != std::string::npos)
+    {
+        if (cubes > cubes_max[2])
+        {
             is_possible = false;
         }
-        if(cubes > cubes_min_nr[2]) {
+        if (cubes > cubes_min_nr[2])
+        {
             cubes_min_nr[2] = cubes;
         }
     }

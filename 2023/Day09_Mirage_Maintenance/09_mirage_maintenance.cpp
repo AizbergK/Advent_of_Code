@@ -1,17 +1,18 @@
-#include<iostream>
-#include<fstream>
-#include<sstream>
-#include<vector>
-#include"../../timer_utility.h"
+#include "../../timer_utility.h"
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <vector>
 
 TimerUtility program_timer;
-//time to solve: 14.3289ms
+// time to solve: 14.3289ms
 
 std::pair<int, int> get_prediction(std::vector<int>);
 std::vector<int> get_next_sequence(std::vector<int>);
 bool is_sequence_zero(std::vector<int>);
 
-int main() {
+int main()
+{
 
     program_timer.startTimer();
 
@@ -21,7 +22,8 @@ int main() {
     std::string line;
     std::vector<int> sequence;
 
-    while(std::getline(input, line)) {
+    while (std::getline(input, line))
+    {
         std::stringstream ss(line);
         while (ss >> number)
         {
@@ -39,28 +41,33 @@ int main() {
     return 0;
 }
 
-std::pair<int, int> get_prediction(std::vector<int> sequence) {
+std::pair<int, int> get_prediction(std::vector<int> sequence)
+{
 
     std::vector<std::vector<int>> sequences_to_zero;
     std::pair<int, int> prediction = {0, 0};
     sequences_to_zero.push_back(sequence);
 
-    while(!is_sequence_zero(sequences_to_zero.back())) {
+    while (!is_sequence_zero(sequences_to_zero.back()))
+    {
         sequences_to_zero.push_back(get_next_sequence(sequences_to_zero.back()));
     }
 
-    for (int i = sequences_to_zero.size() - 1; i >= 0; i--) {
+    for (int i = sequences_to_zero.size() - 1; i >= 0; i--)
+    {
         prediction.second += sequences_to_zero[i].back();
     }
 
-    for (int i = sequences_to_zero.size() - 2; i >= 0; i--) {
+    for (int i = sequences_to_zero.size() - 2; i >= 0; i--)
+    {
         prediction.first = sequences_to_zero[i][0] - prediction.first;
     }
-    
+
     return prediction;
 }
 
-std::vector<int> get_next_sequence(std::vector<int> sequence) {
+std::vector<int> get_next_sequence(std::vector<int> sequence)
+{
 
     std::vector<int> next_sequence;
 
@@ -72,9 +79,12 @@ std::vector<int> get_next_sequence(std::vector<int> sequence) {
     return next_sequence;
 }
 
-bool is_sequence_zero(std::vector<int> sequence) {
-    for (int i = 0; i < sequence.size(); i++) {
-        if(sequence[i] != 0) {
+bool is_sequence_zero(std::vector<int> sequence)
+{
+    for (int i = 0; i < sequence.size(); i++)
+    {
+        if (sequence[i] != 0)
+        {
             return false;
         }
     }

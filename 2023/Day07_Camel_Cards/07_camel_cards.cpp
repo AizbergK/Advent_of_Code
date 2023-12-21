@@ -1,14 +1,15 @@
-#include<iostream>
-#include<fstream>
-#include<vector>
-#include<math.h>
-#include<algorithm>
-#include"../../timer_utility.h"
+#include "../../timer_utility.h"
+#include <algorithm>
+#include <fstream>
+#include <iostream>
+#include <math.h>
+#include <vector>
 
 TimerUtility program_timer;
-//time to solve: 2.003ms
+// time to solve: 2.003ms
 
-struct card {
+struct card
+{
     std::string hand;
     int bid;
     int rank;
@@ -18,12 +19,13 @@ struct card {
 
 int hand_rank(card);
 int hash_value(std::string, std::vector<std::pair<char, int>>);
-void set_default_hash_values(std::vector<std::pair<char, int>>*);
+void set_default_hash_values(std::vector<std::pair<char, int>> *);
 long long total_pot(std::vector<card>);
 bool sort_func(card, card);
-void joker(std::vector<std::pair<char, int>>*);
+void joker(std::vector<std::pair<char, int>> *);
 
-int main() {
+int main()
+{
 
     program_timer.startTimer();
 
@@ -36,7 +38,8 @@ int main() {
     std::ifstream input;
     input.open("./input.txt");
 
-    while(input >> individual_hand.hand) {
+    while (input >> individual_hand.hand)
+    {
         input >> individual_hand.bid;
         individual_hand.hash_value = hash_value(individual_hand.hand, default_hash_value);
         individual_hand.rank = hand_rank(individual_hand);
@@ -53,7 +56,8 @@ int main() {
     return 0;
 }
 
-int hand_rank(card individual_hand) {
+int hand_rank(card individual_hand)
+{
 
     int rank = 1;
     std::vector<std::pair<char, int>> hand_cards;
@@ -63,26 +67,31 @@ int hand_rank(card individual_hand) {
     card_index.second = 1;
     hand_cards.push_back(card_index);
 
-    for (int i = 1; i < individual_hand.hand.length(); i++) {
-        for (int j = 0; j <= hand_cards.size(); j++) {
-            if(j == hand_cards.size()) {
+    for (int i = 1; i < individual_hand.hand.length(); i++)
+    {
+        for (int j = 0; j <= hand_cards.size(); j++)
+        {
+            if (j == hand_cards.size())
+            {
                 card_index.first = individual_hand.hand[i];
                 card_index.second = 1;
-                hand_cards.push_back(card_index); 
+                hand_cards.push_back(card_index);
                 break;
             }
-            if(hand_cards[j].first == individual_hand.hand[i]) {
+            if (hand_cards[j].first == individual_hand.hand[i])
+            {
                 hand_cards[j].second++;
                 break;
             }
-            
-        }  
+        }
     }
 
     joker(&hand_cards);
 
-    for (int i = 0; i < hand_cards.size(); i++) {
-        if(hand_cards[i].second > 0) {
+    for (int i = 0; i < hand_cards.size(); i++)
+    {
+        if (hand_cards[i].second > 0)
+        {
             rank += pow(hand_cards[i].second - 1, 2);
         }
     }
@@ -90,18 +99,23 @@ int hand_rank(card individual_hand) {
     return rank;
 }
 
-void joker(std::vector<std::pair<char, int>>* hand_cards) {
+void joker(std::vector<std::pair<char, int>> *hand_cards)
+{
 
     int joker_rank = 0, max_pos = 0, max = 0;
-    for (int i = 0; i < (*hand_cards).size(); i++) {
-        if((*hand_cards)[i].first == 'J') {
+    for (int i = 0; i < (*hand_cards).size(); i++)
+    {
+        if ((*hand_cards)[i].first == 'J')
+        {
             joker_rank = (*hand_cards)[i].second;
             (*hand_cards)[i].second = 0;
             break;
         }
     }
-    for (int i = 0; i < (*hand_cards).size(); i++) {
-        if((*hand_cards)[i].second > max) {
+    for (int i = 0; i < (*hand_cards).size(); i++)
+    {
+        if ((*hand_cards)[i].second > max)
+        {
             max = (*hand_cards)[i].second;
             max_pos = i;
         }
@@ -111,11 +125,13 @@ void joker(std::vector<std::pair<char, int>>* hand_cards) {
     return;
 }
 
-void set_default_hash_values(std::vector<std::pair<char, int>>* default_hash_values) {
+void set_default_hash_values(std::vector<std::pair<char, int>> *default_hash_values)
+{
 
     std::pair<char, int> card_value;
 
-    for (int i = 1; i <= 13; i++) {
+    for (int i = 1; i <= 13; i++)
+    {
         switch (i)
         {
         case 1:
@@ -189,28 +205,34 @@ void set_default_hash_values(std::vector<std::pair<char, int>>* default_hash_val
     }
 }
 
-int hash_value(std::string hand, std::vector<std::pair<char, int>> default_hash_values) {
+int hash_value(std::string hand, std::vector<std::pair<char, int>> default_hash_values)
+{
 
     int value = 0;
     int char_value;
 
-    for (int i = 0; i < hand.length(); i++) {
-        for (int j = 0; j < default_hash_values.size(); j++){
-            if(default_hash_values[j].first == hand[i]) {
+    for (int i = 0; i < hand.length(); i++)
+    {
+        for (int j = 0; j < default_hash_values.size(); j++)
+        {
+            if (default_hash_values[j].first == hand[i])
+            {
                 char_value = default_hash_values[j].second;
             }
         }
         value += char_value * pow(default_hash_values.size(), hand.length() - (i + 1));
     }
 
-        return value;
+    return value;
 }
 
-long long total_pot(std::vector<card> game) {
+long long total_pot(std::vector<card> game)
+{
 
     long long total = 0, bid, rank;
 
-    for (int i = 0; i < game.size(); i++) {
+    for (int i = 0; i < game.size(); i++)
+    {
         bid = game[i].bid;
         rank = i + 1;
         total += bid * rank;
@@ -219,10 +241,14 @@ long long total_pot(std::vector<card> game) {
     return total;
 }
 
-bool sort_func(card obj1, card obj2) {
-    if(obj1.abs_value <= obj2.abs_value) {
+bool sort_func(card obj1, card obj2)
+{
+    if (obj1.abs_value <= obj2.abs_value)
+    {
         return true;
-    } else {
+    }
+    else
+    {
         return false;
     }
 }
