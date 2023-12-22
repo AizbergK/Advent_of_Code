@@ -59,7 +59,7 @@ int main()
 
     for (int i = 0; i < all_threads.size(); i++)
     {
-        all_threads[i].join();
+        all_threads[i].detach();
     }
 
     std::cout << first_val << std::endl << max_val << std::endl;

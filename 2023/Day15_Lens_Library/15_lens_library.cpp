@@ -19,7 +19,6 @@ void fill_boxes(std::string *, std::vector<std::vector<std::pair<std::string, in
 
 int main()
 {
-
     program_timer.startTimer();
 
     std::ifstream input;
@@ -32,12 +31,12 @@ int main()
 
     // part 1
     hash_total = get_hash_total(&instr_seq);
-    std::cout << hash_total << std::endl;
+    std::cout << hash_total << '\n';
 
     // part 2
     fill_boxes(&instr_seq, &boxes);
     total_focusing_power = get_focusing_power(&boxes);
-    std::cout << total_focusing_power << std::endl;
+    std::cout << total_focusing_power << '\n';
 
     program_timer.getDuration();
 
