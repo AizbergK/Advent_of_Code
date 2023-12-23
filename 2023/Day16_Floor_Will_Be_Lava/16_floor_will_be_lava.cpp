@@ -1,8 +1,6 @@
 #include "../../timer_utility.h"
 #include <fstream>
 #include <iostream>
-#include <math.h>
-#include <string.h>
 #include <string>
 #include <thread>
 #include <vector>
@@ -12,7 +10,7 @@ TimerUtility program_timer;
 
 struct grid_el
 {
-    char symb;
+    char symbol;
     bool no_energy = true;
     bool was_split = false;
 };
@@ -40,7 +38,6 @@ int main()
     int first_val = 0, max_val = 0;
 
     std::vector<std::vector<grid_el>> grid;
-    std::vector<path_trace> all_paths;
     std::vector<std::thread> all_threads;
 
     get_data_and_init(&grid, file_name);
@@ -89,7 +86,7 @@ void get_data_and_init(std::vector<std::vector<grid_el>> *grid, std::string file
 
 void energize_grid(int *max_val, std::vector<std::vector<grid_el>> grid, int x, int y, char dir)
 {
-    const int r_boud = grid[0].size(), d_bound = grid.size();
+    const int r_bound = grid[0].size(), d_bound = grid.size();
     int counter = 0;
     std::vector<path_trace> all_paths;
     path_trace start;
@@ -100,7 +97,7 @@ void energize_grid(int *max_val, std::vector<std::vector<grid_el>> grid, int x, 
 
     for (int i = 0; i < all_paths.size(); i++)
     {
-        while (check_bounds(r_boud, d_bound, all_paths[i]))
+        while (check_bounds(r_bound, d_bound, all_paths[i]))
         {
             if (grid[all_paths[i].x][all_paths[i].y].no_energy)
             {
@@ -115,14 +112,14 @@ void energize_grid(int *max_val, std::vector<std::vector<grid_el>> grid, int x, 
     (*max_val) = std::max((*max_val), counter);
 }
 
-bool check_bounds(int r_boud, int d_bound, path_trace curr_path)
+bool check_bounds(int r_bound, int d_bound, path_trace curr_path)
 {
 
     if (curr_path.x < 0)
     {
         return false;
     }
-    if (curr_path.x == r_boud)
+    if (curr_path.x == r_bound)
     {
         return false;
     }

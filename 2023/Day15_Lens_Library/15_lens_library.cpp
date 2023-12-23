@@ -1,8 +1,6 @@
 #include "../../timer_utility.h"
 #include <fstream>
 #include <iostream>
-#include <math.h>
-#include <string.h>
 #include <string>
 #include <vector>
 

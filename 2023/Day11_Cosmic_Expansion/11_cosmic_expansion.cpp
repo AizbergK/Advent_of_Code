@@ -114,8 +114,7 @@ void print_cosmos(char **cosmos)
 void expand_cosmos(char **cosmos, int *line_number, int *col_number)
 {
 
-    bool is_line_empty, is_col_empty;
-    std::string empty_line;
+    bool is_line_empty;
 
     for (int i = 0; i < *line_number; i++)
     {

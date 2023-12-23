@@ -1,7 +1,6 @@
 #include "../../timer_utility.h"
 #include <fstream>
 #include <iostream>
-#include <string.h>
 #include <string>
 #include <vector>
 
@@ -17,7 +16,7 @@ int count_col_load(std::string *);
 void spin_cycle(matrix *);
 void rotate_dish(matrix *);
 void flip_vertical(matrix *);
-void rotate_dish_oneshot(matrix *);
+void rotate_dish_one_shot(matrix *);
 void flip_vertical_row(std::string *);
 bool compare_matrix(matrix *, matrix *);
 int compare_matrix_back_to_front(std::vector<matrix> *, matrix *, int *);
@@ -127,7 +126,7 @@ void move_rock_north(std::string *dish_line, int from)
 int count_load(matrix *the_dish)
 {
 
-    int load = 0, dish_size = the_dish->size();
+    int load = 0;
 
     for (int i = 0; i < the_dish->size(); i++)
     {
@@ -191,7 +190,7 @@ void rotate_dish(matrix *the_dish)
     return;
 }
 
-int compare_matrix_back_to_front(std::vector<matrix> *all_matrix, matrix *second_matrix, int *repeating_index)
+int compare_matrix_back_to_front(std::vector<matrix> *all_matrix, matrix *second_matrix)
 {
 
     for (std::vector<matrix>::reverse_iterator i = (*all_matrix).rbegin(); i != (*all_matrix).rend(); i++)

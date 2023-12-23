@@ -1,23 +1,23 @@
 #include "../../timer_utility.h"
+#include <cmath>
 #include <fstream>
 #include <iostream>
-#include <math.h>
 #include <string>
 #include <vector>
 
 TimerUtility part1_timer, part2_timer, data_timer;
-// 0.2588ms  : data in + parsing
-// 0.0312ms  : part1
-// 0.0242ms  : part2
+// 0.1151ms  : data in + parsing
+// 0.0023ms  : part1
+// 0.0015ms  : part2
 
-void get_data(std::vector<std::pair<char, int>> *, std::vector<std::pair<char, int>> *, std::string);
+void get_data(std::vector<std::pair<char, int>> *, std::vector<std::pair<char, int>> *, const std::string &);
 long long get_area(std::vector<std::pair<char, int>> *);
 
 int main()
 {
-    std::string file_name = "./input.txt";
+    std::string file_name = "./test.txt";
     std::ios_base::sync_with_stdio(false);
-    std::cin.tie(NULL);
+    std::cin.tie(nullptr);
 
     std::vector<std::pair<char, int>> dir_l_arr, dir_l_arr_two;
     long long part1, part2;
@@ -40,7 +40,7 @@ int main()
 }
 
 void get_data(std::vector<std::pair<char, int>> *dir_l_arr, std::vector<std::pair<char, int>> *dir_l_arr_two,
-              std::string file_name)
+              const std::string &file_name)
 {
     std::ifstream input;
     input.open(file_name);
@@ -70,11 +70,11 @@ void get_data(std::vector<std::pair<char, int>> *dir_l_arr, std::vector<std::pai
         case 3:
             dir_l.first = 'U';
             break;
+        default:
+            break;
         }
         dir_l_arr_two->push_back(dir_l);
     }
-
-    return;
 }
 
 long long get_area(std::vector<std::pair<char, int>> *dir_l_arr)
@@ -83,26 +83,28 @@ long long get_area(std::vector<std::pair<char, int>> *dir_l_arr)
     long long sum_left = 0, sum_right = 0, start_x = 0, start_y = 0, perimeter = 0;
 
     std::pair<long long, long long> point;
-    for (int i = 0; i < dir_l_arr->size(); i++)
+    for (std::pair<char, int> l_arr : *dir_l_arr)
     {
-        switch ((*dir_l_arr)[i].first)
+        switch (l_arr.first)
         {
         case 'L':
-            start_x -= (*dir_l_arr)[i].second;
+            start_x -= l_arr.second;
             break;
         case 'R':
-            start_x += (*dir_l_arr)[i].second;
+            start_x += l_arr.second;
             break;
         case 'U':
-            start_y -= (*dir_l_arr)[i].second;
+            start_y -= l_arr.second;
             break;
         case 'D':
-            start_y += (*dir_l_arr)[i].second;
+            start_y += l_arr.second;
+            break;
+        default:
             break;
         }
         point.first = start_y;
         point.second = start_x;
-        perimeter += (*dir_l_arr)[i].second;
+        perimeter += l_arr.second;
         all_points.push_back(point);
     }
 

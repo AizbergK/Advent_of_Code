@@ -6,7 +6,6 @@
 #include <vector>
 
 #include "../../timer_utility.h"
-#include <math.h>
 
 TimerUtility program_timer, run_timer;
 // time to solve: 4.8986ms

@@ -205,8 +205,6 @@ int run_maze(dimensions start, std::vector<std::vector<pipe>> *maze, std::vector
 
 void advance(dimensions *location, pipe *from, std::vector<std::vector<pipe>> *maze)
 {
-
-    dimensions new_location;
     int continue_case;
 
     if ((*maze)[(*location).height][(*location).width].east)
