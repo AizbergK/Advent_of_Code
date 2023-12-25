@@ -190,7 +190,7 @@ void rotate_dish(matrix *the_dish)
     return;
 }
 
-int compare_matrix_back_to_front(std::vector<matrix> *all_matrix, matrix *second_matrix)
+int compare_matrix_back_to_front(std::vector<matrix> *all_matrix, matrix *second_matrix, int *index)
 {
 
     for (std::vector<matrix>::reverse_iterator i = (*all_matrix).rbegin(); i != (*all_matrix).rend(); i++)
