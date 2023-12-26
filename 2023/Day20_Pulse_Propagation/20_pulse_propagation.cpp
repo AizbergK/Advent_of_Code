@@ -10,7 +10,9 @@
 #include <vector>
 
 TimerUtility input_timer, part1_timer, part2_timer;
-// time to solve: 1.000ms
+// 0.8477ms  : data in + parsing
+// 24.652ms  : part1
+// 343.56ms  : part2
 
 // LOW SINGAL  = FALSE
 // HIGH SIGNAL = TRUE
