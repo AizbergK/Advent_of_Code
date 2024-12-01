@@ -1,0 +1,9 @@
+﻿  Scanning sources for module dependencies...
+  std.ixx
+  std.compat.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  15_lens_library.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day15_lens_library\15_lens_library.cpp(84,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  15_lens_library.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\15_lens_library.exe

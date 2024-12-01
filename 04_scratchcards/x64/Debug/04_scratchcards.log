@@ -1,0 +1,12 @@
+﻿  Scanning sources for module dependencies...
+  std.ixx
+  std.compat.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  04_scratchcards.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day04_scratchcards\04_scratchcards.cpp(33,21): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day04_scratchcards\04_scratchcards.cpp(50,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day04_scratchcards\04_scratchcards.cpp(50,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day04_scratchcards\04_scratchcards.cpp(50,76): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  04_scratchcards.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\04_scratchcards.exe

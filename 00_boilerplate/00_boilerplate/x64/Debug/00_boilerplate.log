@@ -1,0 +1,4 @@
+﻿  00_boilerplate.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day00_boilerplate\00_boilerplate.cpp(18,5): error C3861: 'get_data': identifier not found
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day00_boilerplate\00_boilerplate.cpp(22,5): error C3861: 'part1': identifier not found
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day00_boilerplate\00_boilerplate.cpp(26,5): error C3861: 'part2': identifier not found

@@ -1,0 +1,16 @@
+﻿  Scanning sources for module dependencies...
+  std.ixx
+  std.compat.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  12_hot_springs.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(63,49): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(102,45): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(103,58): warning C4267: '=': conversion from 'size_t' to '_Ty2', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(103,58): warning C4267:         with
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(103,58): warning C4267:         [
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(103,58): warning C4267:             _Ty2=int
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(103,58): warning C4267:         ]
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day12_hot_springs\12_hot_springs.cpp(113,24): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  12_hot_springs.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\12_hot_springs.exe

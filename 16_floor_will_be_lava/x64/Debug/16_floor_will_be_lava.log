@@ -1,0 +1,36 @@
+﻿  Scanning sources for module dependencies...
+  16_floor_will_be_lava.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day16_floor_will_be_lava\16_floor_will_be_lava.cpp(89,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day16_floor_will_be_lava\16_floor_will_be_lava.cpp(89,23): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day16_floor_will_be_lava\16_floor_will_be_lava.cpp(89,60): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day16_floor_will_be_lava\16_floor_will_be_lava.cpp(89,49): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(1714,98): warning C4244: 'argument': conversion from 'unsigned __int64' to 'int', possible loss of data
+  (compiling source file '../2023/day16_floor_will_be_lava/16_floor_will_be_lava.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\type_traits(1714,98):
+      the template instantiation context (the oldest one first) is
+          C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day16_floor_will_be_lava\16_floor_will_be_lava.cpp(49,42):
+          see reference to function template instantiation 'std::thread::thread<void(__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char),int*,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>&,int&,unsigned __int64,char,0>(_Fn &&,int *&&,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>> &,int &,unsigned __int64 &&,char &&)' being compiled
+          with
+          [
+              _Fn=void (__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(93,9):
+          see reference to function template instantiation 'void std::thread::_Start<void(__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char),_Ty,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>&,int&,unsigned __int64,char>(_Fn &&,_Ty &&,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>> &,int &,unsigned __int64 &&,char &&)' being compiled
+          with
+          [
+              _Ty=int *,
+              _Fn=void (__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char)
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(76,40):
+          see reference to function template instantiation 'unsigned int (__cdecl *std::thread::_Get_invoke<std::thread::_Start::_Tuple,0,1,2,3,4,5>(std::integer_sequence<size_t,0,1,2,3,4,5>) noexcept)(void *) noexcept' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(67,17):
+          see reference to function template instantiation 'unsigned int std::thread::_Invoke<std::thread::_Start::_Tuple,0,1,2,3,4,5>(void *) noexcept' being compiled
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\thread(60,14):
+          see reference to function template instantiation 'void std::invoke<void(__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char),int*,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,unsigned __int64,char>(_Callable &&,_Ty1 &&,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>> &&,int &&,unsigned __int64 &&,char &&) noexcept(false)' being compiled
+          with
+          [
+              _Callable=void (__cdecl *)(int *,std::vector<std::vector<grid_el,std::allocator<grid_el>>,std::allocator<std::vector<grid_el,std::allocator<grid_el>>>>,int,int,char),
+              _Ty1=int *
+          ]
+  
+  16_floor_will_be_lava.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\16_floor_will_be_lava.exe

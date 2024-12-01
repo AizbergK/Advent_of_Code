@@ -1,0 +1,9 @@
+﻿  Scanning sources for module dependencies...
+  std.compat.ixx
+  std.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  10_pipe_maze.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day10_pipe_maze\10_pipe_maze.cpp(51,40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  10_pipe_made.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\10_pipe_made.exe

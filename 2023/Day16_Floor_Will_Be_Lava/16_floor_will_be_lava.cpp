@@ -10,7 +10,7 @@ TimerUtility program_timer;
 
 struct grid_el
 {
-    char symbol;
+    char symb;
     bool no_energy = true;
     bool was_split = false;
 };

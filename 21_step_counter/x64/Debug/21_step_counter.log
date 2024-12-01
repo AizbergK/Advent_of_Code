@@ -1,0 +1,21 @@
+﻿  Scanning sources for module dependencies...
+  std.ixx
+  std.compat.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  21_step_counter.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(138,59): warning C4101: 'temp_pos': unreferenced local variable
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(205,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(209,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(213,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(217,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(224,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(226,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(230,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(232,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(236,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(238,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(242,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day21_step_counter\21_step_counter.cpp(244,45): warning C4244: 'argument': conversion from '__int64' to 'int', possible loss of data
+  21_step_counter.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\21_step_counter.exe

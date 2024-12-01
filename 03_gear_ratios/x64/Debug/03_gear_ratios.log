@@ -1,0 +1,12 @@
+﻿  Scanning sources for module dependencies...
+  std.compat.ixx
+  std.ixx
+  Compiling...
+  std.ixx
+  std.compat.ixx
+  03_gear_ratios.cpp
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day03_gear_ratios\03_gear_ratios.cpp(28,9): warning C4101: 'number': unreferenced local variable
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day03_gear_ratios\03_gear_ratios.cpp(28,17): warning C4101: 'j': unreferenced local variable
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day03_gear_ratios\03_gear_ratios.cpp(158,46): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day03_gear_ratios\03_gear_ratios.cpp(204,39): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  03_gear_ratios.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\03_gear_ratios.exe
