@@ -1,8 +1,0 @@
-﻿  Scanning sources for module dependencies...
-  std.compat.ixx
-  std.ixx
-  Compiling...
-  std.ixx
-  std.compat.ixx
-  17_clumsy_crucible.cpp
-  17_clumsy_crucible.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\17_clumsy_crucible.exe

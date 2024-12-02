@@ -1,9 +1,0 @@
-﻿  Scanning sources for module dependencies...
-  std.compat.ixx
-  std.ixx
-  Compiling...
-  std.ixx
-  std.compat.ixx
-  08_haunted_wasteland.cpp
-C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day08_haunted_wasteland\08_haunted_wasteland.cpp(211,63): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
-  08_haunted_wastelad.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\08_haunted_wastelad.exe

@@ -5,58 +5,59 @@ VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2023", "2023", "{6B66E2D4-204A-4D06-9916-0B77C223C1F3}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_trebuchet", "01_trebuchet\01_trebuchet.vcxproj", "{C3734885-C51B-4095-AC8A-386AD411EF76}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_cube_conondrum", "02_cube_conondrum\02_cube_conondrum.vcxproj", "{DF19D07B-2089-42C2-911E-C0C538258693}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2024", "2024", "{9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_gear_ratios", "03_gear_ratios\03_gear_ratios.vcxproj", "{36B59BB7-DAAB-468F-A156-028C4D8D947A}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_scratchcards", "04_scratchcards\04_scratchcards.vcxproj", "{26BA023F-0B4B-4BDD-8B2C-510883F811E5}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_seeds", "05_seeds\05_seeds.vcxproj", "{9BFEB338-0DA6-499D-8664-1431E444E93E}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_wait_for_it", "06_wait_for_it\06_wait_for_it.vcxproj", "{3EF33F60-F10C-4B65-8514-1EB7E8F8DB82}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_camel_cards", "07_camel_cards\07_camel_cards.vcxproj", "{8C65EC1A-2D05-402C-93E5-AFD349AA3552}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_haunted_wastelad", "08_haunted_wastelad\08_haunted_wastelad.vcxproj", "{F63F4241-F12E-41CE-A21A-A155B0ABCDF5}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_mirage_maintenance", "09_mirage_maintenance\09_mirage_maintenance.vcxproj", "{2A9C0060-C8A6-4F70-9C45-C90A7B3D6E39}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_pipe_made", "10_pipe_made\10_pipe_made.vcxproj", "{134AEAAA-F26F-4C14-9601-8789A5D1B6FC}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_cosmic_expansion", "11_cosmic_expansion\11_cosmic_expansion.vcxproj", "{37FC8E41-4B19-4456-902F-1AD934C5E335}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_hot_springs", "12_hot_springs\12_hot_springs.vcxproj", "{FACA9C67-53D3-456A-9390-E724715D3D4A}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_incidence", "13_incidence\13_incidence.vcxproj", "{247D5CA1-BCE8-4F55-8E17-317142833A65}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_parabolic_dish", "14_parabolic_dish\14_parabolic_dish.vcxproj", "{61624FD7-5D4E-4E8C-84AC-14E4BFF399EE}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_lens_library", "15_lens_library\15_lens_library.vcxproj", "{1A65F28D-8AB4-4A10-9C6F-C76E3D43BBD5}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_floor_will_be_lava", "16_floor_will_be_lava\16_floor_will_be_lava.vcxproj", "{40ACF365-D412-407F-B7FC-F758FABDF6DF}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "17_clumsy_crucible", "17_clumsy_crucible\17_clumsy_crucible.vcxproj", "{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_lavaduct_lagoon", "18_lavaduct_lagoon\18_lavaduct_lagoon.vcxproj", "{51A9E1EC-2F67-45A7-B0F9-508C010068C4}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_aplenty", "19_aplenty\19_aplenty.vcxproj", "{B46BE0F2-F9D6-495F-B27F-3698F8AC3620}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_pulse_propagation", "20_pulse_propagation\20_pulse_propagation.vcxproj", "{50292C65-E414-4F81-982D-BDAC279E5BDC}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_step_counter", "21_step_counter\21_step_counter.vcxproj", "{55E70935-C4F8-46AF-9D73-B6621FD30922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{C286723A-AA9E-4407-8FD9-FC85AFFFF7D7}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		input.txt = input.txt
-		timer_utility.h = timer_utility.h
+		other\include_everything.h = other\include_everything.h
+		other\input.txt = other\input.txt
+		other\timer_utility.h = other\timer_utility.h
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_historian", "01_historian\01_historian.vcxproj", "{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_trebuchet", "2023\01_trebuchet\01_trebuchet.vcxproj", "{623437A3-00C7-4C99-B6B1-8733933B2D35}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_cube_conondrum", "2023\02_cube_conondrum\02_cube_conondrum.vcxproj", "{DF19D07B-2089-42C2-911E-C0C538258693}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_gear_ratios", "2023\03_gear_ratios\03_gear_ratios.vcxproj", "{36B59BB7-DAAB-468F-A156-028C4D8D947A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_scratchcards", "2023\04_scratchcards\04_scratchcards.vcxproj", "{26BA023F-0B4B-4BDD-8B2C-510883F811E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_seeds", "2023\05_seeds\05_seeds.vcxproj", "{9BFEB338-0DA6-499D-8664-1431E444E93E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_wait_for_it", "2023\06_wait_for_it\06_wait_for_it.vcxproj", "{3EF33F60-F10C-4B65-8514-1EB7E8F8DB82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_camel_cards", "2023\07_camel_cards\07_camel_cards.vcxproj", "{8C65EC1A-2D05-402C-93E5-AFD349AA3552}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08_haunted_wastelad", "2023\08_haunted_wastelad\08_haunted_wastelad.vcxproj", "{F63F4241-F12E-41CE-A21A-A155B0ABCDF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_mirage_maintenance", "2023\09_mirage_maintenance\09_mirage_maintenance.vcxproj", "{2A9C0060-C8A6-4F70-9C45-C90A7B3D6E39}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_pipe_made", "2023\10_pipe_made\10_pipe_made.vcxproj", "{134AEAAA-F26F-4C14-9601-8789A5D1B6FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_cosmic_expansion", "2023\11_cosmic_expansion\11_cosmic_expansion.vcxproj", "{37FC8E41-4B19-4456-902F-1AD934C5E335}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_hot_springs", "2023\12_hot_springs\12_hot_springs.vcxproj", "{FACA9C67-53D3-456A-9390-E724715D3D4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_incidence", "2023\13_incidence\13_incidence.vcxproj", "{247D5CA1-BCE8-4F55-8E17-317142833A65}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "14_parabolic_dish", "2023\14_parabolic_dish\14_parabolic_dish.vcxproj", "{61624FD7-5D4E-4E8C-84AC-14E4BFF399EE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "15_lens_library", "2023\15_lens_library\15_lens_library.vcxproj", "{1A65F28D-8AB4-4A10-9C6F-C76E3D43BBD5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16_floor_will_be_lava", "2023\16_floor_will_be_lava\16_floor_will_be_lava.vcxproj", "{40ACF365-D412-407F-B7FC-F758FABDF6DF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_lavaduct_lagoon", "2023\18_lavaduct_lagoon\18_lavaduct_lagoon.vcxproj", "{51A9E1EC-2F67-45A7-B0F9-508C010068C4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "19_aplenty", "2023\19_aplenty\19_aplenty.vcxproj", "{B46BE0F2-F9D6-495F-B27F-3698F8AC3620}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20_pulse_propagation", "2023\20_pulse_propagation\20_pulse_propagation.vcxproj", "{50292C65-E414-4F81-982D-BDAC279E5BDC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "21_step_counter", "2023\21_step_counter\21_step_counter.vcxproj", "{55E70935-C4F8-46AF-9D73-B6621FD30922}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_historian", "2024\01_historian\01_historian.vcxproj", "{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_red_nosed", "2024\02_red_nosed\02_red_nosed.vcxproj", "{D8129057-8FCC-47A1-8EFF-DC290F8217A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,14 +67,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Debug|x64.ActiveCfg = Debug|x64
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Debug|x64.Build.0 = Debug|x64
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Debug|x86.ActiveCfg = Debug|Win32
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Debug|x86.Build.0 = Debug|Win32
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Release|x64.ActiveCfg = Release|x64
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Release|x64.Build.0 = Release|x64
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Release|x86.ActiveCfg = Release|Win32
-		{C3734885-C51B-4095-AC8A-386AD411EF76}.Release|x86.Build.0 = Release|Win32
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Debug|x64.ActiveCfg = Debug|x64
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Debug|x64.Build.0 = Debug|x64
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Debug|x86.ActiveCfg = Debug|Win32
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Debug|x86.Build.0 = Debug|Win32
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Release|x64.ActiveCfg = Release|x64
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Release|x64.Build.0 = Release|x64
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Release|x86.ActiveCfg = Release|Win32
+		{623437A3-00C7-4C99-B6B1-8733933B2D35}.Release|x86.Build.0 = Release|Win32
 		{DF19D07B-2089-42C2-911E-C0C538258693}.Debug|x64.ActiveCfg = Debug|x64
 		{DF19D07B-2089-42C2-911E-C0C538258693}.Debug|x64.Build.0 = Debug|x64
 		{DF19D07B-2089-42C2-911E-C0C538258693}.Debug|x86.ActiveCfg = Debug|Win32
@@ -194,14 +195,6 @@ Global
 		{40ACF365-D412-407F-B7FC-F758FABDF6DF}.Release|x64.Build.0 = Release|x64
 		{40ACF365-D412-407F-B7FC-F758FABDF6DF}.Release|x86.ActiveCfg = Release|Win32
 		{40ACF365-D412-407F-B7FC-F758FABDF6DF}.Release|x86.Build.0 = Release|Win32
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Debug|x64.ActiveCfg = Debug|x64
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Debug|x64.Build.0 = Debug|x64
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Debug|x86.ActiveCfg = Debug|Win32
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Debug|x86.Build.0 = Debug|Win32
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Release|x64.ActiveCfg = Release|x64
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Release|x64.Build.0 = Release|x64
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Release|x86.ActiveCfg = Release|Win32
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9}.Release|x86.Build.0 = Release|Win32
 		{51A9E1EC-2F67-45A7-B0F9-508C010068C4}.Debug|x64.ActiveCfg = Debug|x64
 		{51A9E1EC-2F67-45A7-B0F9-508C010068C4}.Debug|x64.Build.0 = Debug|x64
 		{51A9E1EC-2F67-45A7-B0F9-508C010068C4}.Debug|x86.ActiveCfg = Debug|Win32
@@ -242,12 +235,20 @@ Global
 		{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC}.Release|x64.Build.0 = Release|x64
 		{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC}.Release|x86.ActiveCfg = Release|Win32
 		{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC}.Release|x86.Build.0 = Release|Win32
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Debug|x64.ActiveCfg = Debug|x64
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Debug|x64.Build.0 = Debug|x64
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Debug|x86.ActiveCfg = Debug|Win32
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Debug|x86.Build.0 = Debug|Win32
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Release|x64.ActiveCfg = Release|x64
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Release|x64.Build.0 = Release|x64
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Release|x86.ActiveCfg = Release|Win32
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C3734885-C51B-4095-AC8A-386AD411EF76} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
+		{623437A3-00C7-4C99-B6B1-8733933B2D35} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{DF19D07B-2089-42C2-911E-C0C538258693} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{36B59BB7-DAAB-468F-A156-028C4D8D947A} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{26BA023F-0B4B-4BDD-8B2C-510883F811E5} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
@@ -263,12 +264,12 @@ Global
 		{61624FD7-5D4E-4E8C-84AC-14E4BFF399EE} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{1A65F28D-8AB4-4A10-9C6F-C76E3D43BBD5} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{40ACF365-D412-407F-B7FC-F758FABDF6DF} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
-		{D9A96D92-A1DA-412F-A75C-E1DCF8D815E9} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{51A9E1EC-2F67-45A7-B0F9-508C010068C4} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{B46BE0F2-F9D6-495F-B27F-3698F8AC3620} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{50292C65-E414-4F81-982D-BDAC279E5BDC} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{55E70935-C4F8-46AF-9D73-B6621FD30922} = {6B66E2D4-204A-4D06-9916-0B77C223C1F3}
 		{E3B4E74F-0C95-41AB-AF2C-1D4E9EE0CCEC} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
+		{D8129057-8FCC-47A1-8EFF-DC290F8217A7} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {383C9ADD-2BD7-4EE3-AB80-C1F7D63C29CD}

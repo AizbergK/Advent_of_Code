@@ -1,9 +1,0 @@
-﻿  Scanning sources for module dependencies...
-  std.ixx
-  std.compat.ixx
-  Compiling...
-  std.ixx
-  std.compat.ixx
-  11_cosmic_expansion.cpp
-C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2023\day11_cosmic_expansion\11_cosmic_expansion.cpp(64,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  11_cosmic_expansion.vcxproj -> C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\x64\Debug\11_cosmic_expansion.exe
