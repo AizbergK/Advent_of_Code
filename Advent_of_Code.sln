@@ -10,8 +10,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{C286723A-AA9E-4407-8FD9-FC85AFFFF7D7}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		other\boilerplate.cpp = other\boilerplate.cpp
 		other\include_everything.h = other\include_everything.h
 		other\input.txt = other\input.txt
+		other\test.txt = other\test.txt
 		other\timer_utility.h = other\timer_utility.h
 	EndProjectSection
 EndProject
