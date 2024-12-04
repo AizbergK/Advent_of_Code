@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{149d1247-6cad-48d4-9225-8482bbcd0585}</ProjectGuid>
-    <RootNamespace>My03mullitover</RootNamespace>
+    <ProjectGuid>{3c286335-27b5-4a6b-a16b-795e27507c76}</ProjectGuid>
+    <RootNamespace>My04ceressearch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\2024\03_mull_it_over\03_mull_it_over.cpp" />
+    <ClCompile Include="04_ceres_search.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
