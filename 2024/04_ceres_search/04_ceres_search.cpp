@@ -14,7 +14,7 @@ int main()
 	int part_one_result{ 0 }, part_two_result{ 0 };
 	TimerUtility input_timer, part1_timer, part2_timer;
 	// 0.2170ms  : data in + parsing
-	// 2.2025ms  : part1
+	// 2.0651ms  : part1
 	// 0.6736ms  : part2
 	input_timer.startTimer();
 	read_data(data, line_count);
