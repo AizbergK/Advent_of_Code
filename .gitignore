@@ -3,4 +3,4 @@ test.txt
 output.txt
 .vscode/
 .vs/
-x64/
+**x64/
