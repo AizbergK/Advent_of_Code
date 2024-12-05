@@ -12,7 +12,7 @@ int main()
 	int part_one_result{ 0 }, part_two_result{ 0 };
 	TimerUtility input_timer, part1_timer, part2_timer;
 	// 1.4694ms  : data in + parsing
-	// 0.0413ms  : part1
+	// 54.700µs  : part1
 	// 3.5266ms  : part2
 	input_timer.startTimer();
 	read_data(rules, sequences);

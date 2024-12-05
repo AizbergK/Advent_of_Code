@@ -1,6 +1,8 @@
 #include <chrono>
 #include <iostream>
 #include <string>
+#include <print>
+#include <Windows.h>
 
 using std::chrono::duration;
 using std::chrono::duration_cast;
@@ -15,47 +17,68 @@ class TimerUtility
     {
         start = high_resolution_clock::now();
     }
-    void getDuration(std::string comment = "")
+    void getDuration(std::u8string comment = u8"")
     {
         setEndTime();
         setDuration();
-        sendMessage(&comment);
+        sendMessage(comment);
     }
 
   private:
     std::chrono::high_resolution_clock::time_point start;
     std::chrono::high_resolution_clock::time_point end;
-    duration<double, std::milli> duration_ms;
-    std::string message = "";
+    duration<double, std::nano> duration_ns;
     void setEndTime()
     {
         end = high_resolution_clock::now();
     }
     void setDuration()
     {
-        duration_ms = end - start;
+        duration_ns = end - start;
     }
-    void sendMessage(std::string *comment)
+    void sendMessage(std::u8string &comment)
     {
-        if (duration_ms.count() >= 1000)
+        std::locale::global(std::locale("en_US.UTF-8"));
+        std::u8string message = u8"";
+
+        if (duration_ns.count() >= 1'000'000'000)
         {
-            message += std::to_string(duration_ms.count() / 1000);
+            double duration_s = duration_ns.count() / 1'000'000'000;
+            std::string temp_string = std::to_string(duration_s);
+            message += std::u8string(temp_string.begin(), temp_string.end());
             message = message.substr(0, 6);
-            message += +"s";
+            message += u8"s";
+        }
+        else if (duration_ns.count() >= 1'000'000)
+        {
+            double duration_ms = duration_ns.count() / 1'000'000;
+            std::string temp_string = std::to_string(duration_ms);
+            message += std::u8string(temp_string.begin(), temp_string.end());
+            message = message.substr(0, 6);
+            message += u8"ms";
+        }
+        else if (duration_ns.count() >= 1'000)
+        {
+            double duration_us = duration_ns.count() / 1'000;
+            std::string temp_string = std::to_string(duration_us);
+            message += std::u8string(temp_string.begin(), temp_string.end());
+            message = message.substr(0, 6);
+            message += u8"µs";
         }
         else
         {
-            message += std::to_string(duration_ms.count());
+            std::string temp_string = std::to_string(duration_ns.count());
+            message += std::u8string(temp_string.begin(), temp_string.end());
             message = message.substr(0, 6);
-            message += "ms";
+            message += u8"ns";
         }
-        if ((*comment).length())
+        if (comment.length())
         {
             message.append(10 - message.length(), ' ');
-            message += ": " + (*comment);
+            message += u8": " + comment;
         }
         message += '\n';
-        std::cout << message;
+        std::cout << reinterpret_cast<const char*>(message.c_str());
         message.clear();
     }
 };
