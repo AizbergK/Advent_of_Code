@@ -15,15 +15,15 @@ int main()
 	// 0.0000ms  : part2
 	input_timer.startTimer();
 	read_data(data);
-	input_timer.getDuration();
+	input_timer.getDuration(u8"input day0");
 
 	part1_timer.startTimer();
 	part_one_result = part_one(data);
-	part1_timer.getDuration();
+	part1_timer.getDuration(u8"part1");
 
 	part2_timer.startTimer();
 	part_two_result = part_two(data);
-	part2_timer.getDuration();
+	part2_timer.getDuration(u8"part2");
 
 	std::println("{0}", part_one_result);
 	std::println("{0}", part_two_result);
