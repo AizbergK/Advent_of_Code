@@ -19,6 +19,7 @@ int main()
 	// 149.30µs  : data in + parsing
 	// 240.40µs  : part1
 	// 203.30µs  : part2
+
 	input_timer.startTimer();
 	read_data(data);
 	input_timer.getDuration(u8"input day10");
@@ -33,6 +34,7 @@ int main()
 
 	std::println("{0}", part_one_result);
 	std::println("{0}", part_two_result);
+
 	return 0;
 }
 
