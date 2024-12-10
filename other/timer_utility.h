@@ -63,7 +63,7 @@ class TimerUtility
             std::string temp_string = std::to_string(duration_us);
             message += std::u8string(temp_string.begin(), temp_string.end());
             message = message.substr(0, 6);
-            message += u8"µs";
+            message += u8"µs ";
         }
         else
         {
