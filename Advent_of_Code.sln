@@ -79,6 +79,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_disk_fragmenter", "2024\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_hoof_it", "2024\10_hoof_it\10_hoof_it.vcxproj", "{276ED2F1-F115-43F2-BFAA-7DB5E142E91B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_plutonian_pebbles", "2024\11_plutonian_pebbles\11_plutonian_pebbles.vcxproj", "{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -327,6 +329,14 @@ Global
 		{276ED2F1-F115-43F2-BFAA-7DB5E142E91B}.Release|x64.Build.0 = Release|x64
 		{276ED2F1-F115-43F2-BFAA-7DB5E142E91B}.Release|x86.ActiveCfg = Release|Win32
 		{276ED2F1-F115-43F2-BFAA-7DB5E142E91B}.Release|x86.Build.0 = Release|Win32
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Debug|x64.ActiveCfg = Debug|x64
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Debug|x64.Build.0 = Debug|x64
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Debug|x86.ActiveCfg = Debug|Win32
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Debug|x86.Build.0 = Debug|Win32
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Release|x64.ActiveCfg = Release|x64
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Release|x64.Build.0 = Release|x64
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Release|x86.ActiveCfg = Release|Win32
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -362,6 +372,7 @@ Global
 		{A25F8F8A-EA2C-405A-8091-7ED01EC195B9} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 		{C9242BC3-AF7F-4C27-B8B8-C523FF69AB64} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 		{276ED2F1-F115-43F2-BFAA-7DB5E142E91B} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
+		{D189020B-96DE-46B0-9CFA-52E1EC7FF3C6} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {383C9ADD-2BD7-4EE3-AB80-C1F7D63C29CD}
