@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="07_bridge_repair.cpp">
+    <ClCompile Include="13_claw_contraption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

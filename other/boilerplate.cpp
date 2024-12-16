@@ -39,7 +39,7 @@ void read_data()
 
 int part_one()
 {
-	int result = 0;
+	int result{ 0 };
 
 
 
@@ -48,7 +48,7 @@ int part_one()
 
 int part_two()
 {
-	int result = 0;
+	int result{ 0 };
 
 
 
