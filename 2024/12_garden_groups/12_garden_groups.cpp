@@ -10,9 +10,9 @@ int main()
 	std::vector<std::string> data;
 	int part_one_result{ 0 }, part_two_result{ 0 };
 	TimerUtility input_timer, part1_timer, part2_timer;
-	// 0.0000ms  : data in + parsing
-	// 0.0000ms  : part1
-	// 0.0000ms  : part2
+	// 201.00µs  : data in + parsing
+	// 3.4106ms  : part1
+	// 7.0811ms  : part2
 	input_timer.startTimer();
 	read_data(data);
 	input_timer.getDuration(u8"input day12");
