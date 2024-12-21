@@ -55,15 +55,16 @@ void read_data(std::string& input_path, std::string& towels, towels_view_type& t
 	while (std::getline(input, temp))
 	{
 		to_check.emplace_back(temp);
-		to_check_views.emplace_back( std::string_view{ to_check[to_check.size() - 1] });
 	}
+	for(auto& str : to_check)
+		to_check_views.emplace_back(std::string_view{ str });
 }
 
 long long check_towel(towels_view_type& towel_views, std::string_view towel, int max_towel_size)
 {
 	std::vector<long long> can_form{ std::vector<long long>(towel.size() + 1, 0) };
 	can_form[0] = 1;
-	for (auto index : std::ranges::iota_view(0, static_cast<int>(can_form.size())))
+	for (int index{ 0 }; index != can_form.size(); ++index)
 	{
 		if (can_form[index] == 0) continue;
 

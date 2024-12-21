@@ -1,0 +1,281 @@
+﻿  19_linen_layout.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\print(11): warning STL4038: The contents of <print> are available only with C++23 or later.
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(20,27): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(20,27): error C2061: syntax error: identifier 'u8string'
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(39,27): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(39,27): error C2061: syntax error: identifier 'u8string'
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(24,21): error C2065: 'comment': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(42,14): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(42,14): error C2065: 'u8string': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(42,23): error C2146: syntax error: missing ';' before identifier 'message'
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(42,23): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(48,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(48,29): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(48,29): error C3861: 'u8string': identifier not found
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(49,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(49,23): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(50,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(56,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(56,29): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(56,29): error C3861: 'u8string': identifier not found
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(57,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(57,23): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(58,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(64,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(64,29): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(64,29): error C3861: 'u8string': identifier not found
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(65,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(65,23): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(66,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(71,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(71,29): error C2039: 'u8string': is not a member of 'std'
+  (compiling source file '19_linen_layout.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(71,29): error C3861: 'u8string': identifier not found
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(72,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(72,23): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(73,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(75,13): error C2065: 'comment': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(77,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(77,33): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(78,13): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(78,33): error C2065: 'comment': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(80,9): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(81,52): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(82,9): error C2065: 'message': undeclared identifier
+  (compiling source file '19_linen_layout.cpp')
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(2,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(2,8): error C2146: syntax error: missing ';' before identifier 'std'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(4,14): error C2039: 'unordered_set': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(4,27): error C2143: syntax error: missing ';' before '<'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(4,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(4,27): error C2059: syntax error: '<'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(4,33): error C2039: 'string_view': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(6,42): error C2039: 'u8string': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(6,42): error C2061: syntax error: identifier 'u8string'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(7,62): error C2061: syntax error: identifier 'towels_view_type'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,50): error C2065: 'towels_view_type': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,68): error C2065: 'towel_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,86): error C2039: 'vector': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,86): error C2065: 'vector': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,98): error C2039: 'string_view': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,98): error C2065: 'string_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,112): error C2065: 'to_check_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(8,128): error C2062: type 'int' unexpected
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(14,2): error C2660: 'run_program': function does not take 2 arguments
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(6,6):
+      see declaration of 'run_program'
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(14,2):
+      while trying to match the argument list '(const char [21], const char [11])'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(15,2): error C2660: 'run_program': function does not take 2 arguments
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(6,6):
+      see declaration of 'run_program'
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(15,2):
+      while trying to match the argument list '(const char [22], const char [12])'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(19,42): error C2039: 'u8string': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(19,42): error C2061: syntax error: identifier 'u8string'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(23,2): error C2065: 'towels_view_type': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(23,19): error C2146: syntax error: missing ';' before identifier 'towel_views'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(23,19): error C2065: 'towel_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(24,7): error C2039: 'vector': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(24,7): error C2065: 'vector': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(24,19): error C2275: 'std::string': expected an expression instead of a type
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(24,27): error C2065: 'to_check': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(25,7): error C2039: 'vector': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(25,7): error C2065: 'vector': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(25,19): error C2039: 'string_view': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(25,19): error C2065: 'string_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(25,32): error C2065: 'to_check_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(29,27): error C2065: 'towel_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(29,40): error C2065: 'to_check': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(29,50): error C2065: 'to_check_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(30,39): error C2065: 'comment': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(30,14): error C2660: 'TimerUtility::getDuration': function does not take 1 arguments
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(20,10):
+      see declaration of 'TimerUtility::getDuration'
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(30,14):
+      while trying to match the argument list '()'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(33,61): error C2065: 'towel_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(33,74): error C2065: 'to_check_views': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(33,8): error C2429: language feature 'structured bindings' requires compiler flag '/std:c++17'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(34,15): error C2660: 'TimerUtility::getDuration': function does not take 1 arguments
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\other\timer_utility.h(20,10):
+      see declaration of 'TimerUtility::getDuration'
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(34,15):
+      while trying to match the argument list '(const char [16])'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(36,7): error C2039: 'println': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(36,7): error C3861: 'println': identifier not found
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(37,7): error C2039: 'println': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(37,7): error C3861: 'println': identifier not found
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(38,7): error C2039: 'println': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(38,7): error C3861: 'println': identifier not found
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(41,62): error C2061: syntax error: identifier 'towels_view_type'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(43,16): error C2079: 'input' uses undefined class 'std::basic_ifstream<char,std::char_traits<char>>'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(43,21): error C2440: 'initializing': cannot convert from 'std::string' to 'int'
+      C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(43,21):
+      No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(44,7): error C2672: 'std::getline': no matching overloaded function found
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(82,32):
+      could be 'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)'
+          C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(44,7):
+          'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'std::basic_istream<_Elem,_Traits> &' from 'int'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(75,32):
+      or       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)'
+          C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(44,7):
+          'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)': expects 3 arguments - 2 provided
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(68,32):
+      or       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)'
+          C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(44,7):
+          'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &)': could not deduce template argument for 'std::basic_istream<_Elem,_Traits> &&' from 'int'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(25,32):
+      or       'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)'
+          C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(44,7):
+          'std::basic_istream<_Elem,_Traits> &std::getline(std::basic_istream<_Elem,_Traits> &&,std::basic_string<_Elem,_Traits,_Alloc> &,const _Elem)': expects 3 arguments - 2 provided
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(47,7): error C2039: 'string_view': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\string(23,1):
+      see declaration of 'std'
+  
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(47,7): error C2065: 'string_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(47,19): error C2146: syntax error: missing ';' before identifier 'towels_view'
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(47,19): error C2065: 'towels_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(48,10): error C2065: 'towels_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(50,3): error C2065: 'max_towel_size': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(50,20): error C2065: 'max_towel_size': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(50,37): error C2065: 'towels_view': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(50,70): error C2065: 'max_towel_size': undeclared identifier
+C:\Users\atzbe\source\repos\AizbergK\Advent_of_Code\2024\19_linen_layout\19_linen_layout.cpp(50,70): error C1003: error count exceeds 100; stopping compilation
