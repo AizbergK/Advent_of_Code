@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="19_linen_layout.cpp">
+    <ClCompile Include="21_keypad_conundrum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
