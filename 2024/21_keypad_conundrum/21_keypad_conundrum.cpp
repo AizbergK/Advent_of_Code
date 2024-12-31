@@ -4,40 +4,30 @@ import std;
 void run_program(std::string input, std::u8string comment);
 void read_data(std::string& input_path, std::vector<std::string>& data);
 int part_one(std::vector<std::string>& data);
-int part_two();
+int part_two(std::vector<std::string>& data);
 
 int main()
 {
 	// 000000ms  : data in + parsing
 	// 000000ms  : part1
 	// 000000ms  : part2
-	run_program(__TEST_PATH, u8"test input");
-	run_program(__INPUT_PATH, u8"input day15");
+	//run_program(__TEST_PATH, u8"test input");
+	run_program(__INPUT_PATH, u8"input day21");
 	return 0;
 }
 
-constexpr std::array<std::array<const char*, 11>, 11> keypad_distances{
-						// To:    A         0          1          2          3          4          5          6          7          8          9
-	std::array<const char*, 11>{ "",        "<",       "^<<",     "^<",      "^",       "^^<<",    "^^<",    "^^",       "^^^<<",   "^^^<",    "^^^" },     // from A
-	std::array<const char*, 11>{ ">",       "",        "^<",      "^",       "^>",      "^^<",     "^^",      "^^>",     "^^^<",    "^^^",     "^^^>" },    // from 0
-	std::array<const char*, 11>{ ">>v",     ">v",      "",        ">",       ">>",      "^",       "^>",      "^>>",     "^^",      "^^>",     "^^>>" },    // from 1
-	std::array<const char*, 11>{ "v>",      "v",       "<",       "",        ">",       "^<",      "^",       "^>",      "^^<",     "^^",      "^^>" },     // from 2
-	std::array<const char*, 11>{ "v",       "v<",      "<<",      "<",       "",        "^<<",     "^<",      "^",       "^^<<",    "^^<",     "^^" },      // from 3
-	std::array<const char*, 11>{ ">>vv",    ">vv",     "v",       "v>",      "v>>",     "",        ">",       ">>",      "^",       "^>",      "^>>" },     // from 4
-	std::array<const char*, 11>{ "vv>",     "vv",      "v<",      "v",       "v>",      "<",       "",        ">",       "^<",      "^",       "^>" },      // from 5
-	std::array<const char*, 11>{ "vv",      "vv<",     "v<<",     "v<",      "v",       "<<",      "<",       "",        "^<<",     "^<",      "^" },       // from 6
-	std::array<const char*, 11>{ ">>vvv",   ">vvv",    "vv",      "vv>",     "vv>>",    "v",       "v>",      "v>>",     "",        ">",       ">>" },      // from 7
-	std::array<const char*, 11>{ "vvv>",    "vvv",     "vv<",     "vv",      "vv>",     "v<",      "v",       "v>",      "<",       "",        ">" },       // from 8
-	std::array<const char*, 11>{ "vvv",     "vvv<",    "vv<<",    "vv<",     "vv",      "v<<",     "v<",      "v",       "<<",      "<",       "" }         // from 9
+constexpr std::array<std::array<char, 3>, 4> keypad
+{
+	std::array<char, 3>{ '7', '8', '9' },
+	std::array<char, 3>{ '4', '5', '6' },
+	std::array<char, 3>{ '1', '2', '3' },
+	std::array<char, 3>{ '.', '0', 'A' }
 };
 
-constexpr std::array<std::array<const char*, 5>, 5> arrow_distances{
-					  // To:    A       <       >       ^       v
-	std::array<const char*, 5>{ "",		"v<<",	"v",	"<",	"v<" },		//A (starting point)
-	std::array<const char*, 5>{ ">>^",	"",		">>",	">^",	">" },		//<
-	std::array<const char*, 5>{ "^",	"<<",	"",		"<^",	"<" },		//>
-	std::array<const char*, 5>{ ">",	"v<",	"v>",	"",		"v" },		//^
-	std::array<const char*, 5>{ ">^",	"<",	">",	"^",	"" }		//v
+constexpr std::array<std::array<char, 3>, 2> arrpad
+{
+	std::array<char, 3>{ '.', '^', 'A' },
+	std::array<char, 3>{ '<', 'v', '>' }
 };
 
 void run_program(std::string input, std::u8string comment)
@@ -56,7 +46,7 @@ void run_program(std::string input, std::u8string comment)
 	part1_timer.getDuration(u8"part1");
 
 	part2_timer.startTimer();
-	part_two_result = part_two();
+	part_two_result = part_two(data);
 	part2_timer.getDuration(u8"part2");
 
 	std::println("{0}", part_one_result);
@@ -74,90 +64,202 @@ void read_data(std::string& input_path, std::vector<std::string>& data)
 	}
 }
 
-int arrowpad(char to_search)
+std::pair<int, int> get_pos(char ch)
 {
-	switch (to_search)
+	switch (ch)
 	{
-	case 'A':
-		return 0;
-	case '<':
-		return 1;
-	case '>':
-		return 2;
-	case '^':
-		return 3;
-	case 'v':
-		return 4;
-	} 
+	case 'A': return { 3, 2 };
+	case '0': return { 3, 1 };
+	case '1': return { 2, 0 };
+	case '2': return { 2, 1 };
+	case '3': return { 2, 2 };
+	case '4': return { 1, 0 };
+	case '5': return { 1, 1 };
+	case '6': return { 1, 2 };
+	case '7': return { 0, 0 };
+	case '8': return { 0, 1 };
+	case '9': return { 0, 2 };
+	}
 }
 
-std::string distance_from_to_keypad(char from_ch, char to_ch)
+char get_pos(int pos)
 {
-	std::string value{ "" };
-	int to{ to_ch - '0' + 1 };
-	int from{ from_ch - '0' + 1 };
-
-	if (to > 10) to = 0;
-	if (from > 10) from = 0;
-
-	return keypad_distances[from][to];
+	switch (pos)
+	{
+	case 32: return 'A';
+	case 31: return '0';
+	case 20: return '1';
+	case 21: return '2';
+	case 22: return '3';
+	case 10: return '4';
+	case 11: return '5';
+	case 12: return '6';
+	case 00: return '7';
+	case 01: return '8';
+	case 02: return '9';
+	}
 }
 
-std::string distance_from_to_arrow(char from_ch, char to_ch)
+void find_keypad_paths(char to_ch, std::queue<std::pair<char, std::string>>& paths)
 {
-	std::string value{ "" };
+	while(paths.front().first != to_ch)
+	{
+		std::pair<int, int> from{ get_pos(paths.front().first) };
+		std::pair<int, int> to{ get_pos(to_ch) };
+		if (std::abs(from.first - to.first) > std::abs(from.first + 1 - to.first) && keypad[from.first + 1][from.second] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos((from.first + 1) * 10 + from.second), paths.front().second + 'v' });
+		}
+		if (std::abs(from.first - to.first) > std::abs(from.first - 1 - to.first) && keypad[from.first - 1][from.second] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos((from.first - 1) * 10 + from.second), paths.front().second + '^' });
+		}
+		if (std::abs(from.second - to.second) > std::abs(from.second - to.second + 1) && keypad[from.first][from.second + 1] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos(from.first * 10 + from.second + 1), paths.front().second + '>' });
+		}
+		if (std::abs(from.second - to.second) > std::abs(from.second - to.second - 1) && keypad[from.first][from.second - 1] != '.')
+		{
+			paths.push(std::pair<char, std::string>{ get_pos(from.first * 10 + from.second - 1), paths.front().second + '<' });
+		}
+		paths.pop();
 
-	int to{ arrowpad(to_ch) };
-	int from{ arrowpad(from_ch) };
+	}
+}
 
-	return arrow_distances[from][to];
+std::pair<int, int> get_pos_arrpad(char ch)
+{
+	switch (ch)
+	{
+	case 'A': return { 0, 2 };
+	case '^': return { 0, 1 };
+	case '<': return { 1, 0 };
+	case 'v': return { 1, 1 };
+	case '>': return { 1, 2 };
+	}
+}
+
+char get_pos_arrpad(int pos)
+{
+	switch (pos)
+	{
+	case 02: return 'A';
+	case 01: return '^';
+	case 10: return '<';
+	case 11: return 'v';
+	case 12: return '>';
+	}
+}
+
+void find_arrpad_paths(char to_ch, std::queue<std::pair<char, std::string>>& paths)
+{
+	while (!paths.empty() && paths.front().first != to_ch)
+	{
+		std::pair<int, int> from{ get_pos_arrpad(paths.front().first) };
+		std::pair<int, int> to{ get_pos_arrpad(to_ch) };
+		if (std::abs(from.first - to.first) > std::abs(from.first + 1 - to.first) && arrpad[from.first + 1][from.second] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos_arrpad((from.first + 1) * 10 + from.second), paths.front().second + 'v' });
+		}
+		if (std::abs(from.first - to.first) > std::abs(from.first - 1 - to.first) && arrpad[from.first - 1][from.second] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos_arrpad((from.first - 1) * 10 + from.second), paths.front().second + '^' });
+		}
+		if (std::abs(from.second - to.second) > std::abs(from.second - to.second + 1) && arrpad[from.first][from.second + 1] != '.')
+		{
+			paths.emplace(std::pair<char, std::string>{ get_pos_arrpad(from.first * 10 + from.second + 1), paths.front().second + '>' });
+		}
+		if (std::abs(from.second - to.second) > std::abs(from.second - to.second - 1) && arrpad[from.first][from.second - 1] != '.')
+		{
+			paths.push(std::pair<char, std::string>{ get_pos_arrpad(from.first * 10 + from.second - 1), paths.front().second + '<' });
+		}
+		paths.pop();
+	}
+}
+
+int arrpad_robots(int cur_depth, int max_depth,char prev, char next)
+{
+	if (cur_depth == max_depth) return 1;
+	std::queue<std::pair<char, std::string>> paths_queue;
+
+	paths_queue.push(std::pair<char, std::string>{prev, ""});
+	find_arrpad_paths(next, paths_queue);
+	std::vector<std::pair<char, std::string>> paths;
+	while (!paths_queue.empty())
+	{
+		paths.emplace_back(paths_queue.front());
+		paths_queue.pop();
+		paths.rbegin()->second += 'A';
+	}
+	std::vector<int> path_costs(paths.size(), 0);
+
+	char arrpad_prev{ 'A' };
+	for (int path_no{ 0 }; path_no != paths.size(); ++path_no)
+	{
+		for (int j{ 0 }; j != paths[path_no].second.size(); ++j)
+		{
+			path_costs[path_no] += arrpad_robots(cur_depth + 1, max_depth, arrpad_prev, paths[path_no].second[j]);
+			arrpad_prev = paths[path_no].second[j];
+		}
+	}
+
+	return *std::min_element(path_costs.begin(), path_costs.end());
+}
+
+void keypad_robot(std::vector<std::string>& data, int max_depth, std::vector<int>& steps_for_each_row)
+{
+	char prev{ 'A' };
+	std::vector<int> shortest_sequences;
+	for (auto& row : data)
+	{
+		std::vector<int> step_costs(10, 0);
+		int i{ 0 };
+		for (i; i != row.size(); ++i)
+		{
+			std::queue<std::pair<char, std::string>> paths_queue;
+			paths_queue.push(std::pair<char, std::string>{prev, ""});
+			find_keypad_paths(row[i], paths_queue);
+			std::vector<std::pair<char, std::string>>paths;
+			while (!paths_queue.empty())
+			{
+				paths.emplace_back(paths_queue.front());
+				paths_queue.pop();
+				paths.rbegin()->second += 'A';
+			}
+			std::vector<int> path_costs(paths.size(), 0);
+			prev = row[i];
+
+			char arrpad_prev{ 'A' };
+			for (int path_no{ 0 }; path_no != paths.size(); ++path_no)
+			{
+				for (int j{ 0 }; j != paths[path_no].second.size(); ++j)
+				{
+					path_costs[path_no] += arrpad_robots(0, max_depth, arrpad_prev, paths[path_no].second[j]);
+					arrpad_prev = paths[path_no].second[j];
+				}
+			}
+			step_costs[i] = *std::min_element(path_costs.begin(), path_costs.end());
+		}
+		steps_for_each_row.emplace_back(std::accumulate(step_costs.begin(), step_costs.end(), 0));
+	}
 }
 
 int part_one(std::vector<std::string>& data)
 {
 	int result{ 0 };
-
-	for (auto& row : data)
-	{
-		std::string final_string{ "" };
-		char from{ 'A' };
-		for (int i{ 0 }; i != row.size(); ++i)
-		{
-			std::string temp_keypad{ "" };
-			if(i == 0)
-				temp_keypad += distance_from_to_keypad(from , row[i]) + "A";
-			else
-				temp_keypad += distance_from_to_keypad(row[i - 1] , row[i]) + "A";
-			for (int j{ 0 }; j != temp_keypad.size(); ++j)
-			{
-				std::string temp_arrows1{ "" };
-				if (j == 0)
-					temp_arrows1 += distance_from_to_arrow(from , temp_keypad[j]) + "A";
-				else
-					temp_arrows1 += distance_from_to_arrow(temp_keypad[j - 1] , temp_keypad[j]) + "A";
-				for (int k{ 0 }; k != temp_arrows1.size(); ++k)
-				{
-					std::string temp_arrows2{ "" };
-					if (k == 0)
-						temp_arrows2 += distance_from_to_arrow(from , temp_arrows1[k]) + "A";
-					else
-						temp_arrows2 += distance_from_to_arrow(temp_arrows1[k - 1] , temp_arrows1[k]) + "A";
-					final_string += temp_arrows2;
-				}
-			}
-		}
-		std::cout << final_string << " : " << final_string.size()<< " - " << std::stoi(row) << '\n';
-		result += final_string.size() * std::stoi(row);
-	}
-
+	std::vector<int> steps_for_each_row;
+	keypad_robot(data, 2, steps_for_each_row);
+	for (int i{ 0 }; i != data.size(); ++i)
+		result += std::stoi(data[i]) * steps_for_each_row[i];
 	return result;
 }
 
-int part_two()
+int part_two(std::vector<std::string>& data)
 {
 	int result{ 0 };
-
-
-
+	std::vector<int> steps_for_each_row;
+	keypad_robot(data, 25, steps_for_each_row);
+	for (int i{ 0 }; i != data.size(); ++i)
+		result += std::stoi(data[i]) * steps_for_each_row[i];
 	return result;
 }

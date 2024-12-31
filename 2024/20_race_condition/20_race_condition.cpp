@@ -9,9 +9,9 @@ int part_two(int& start_pos, int& end_pos, std::vector<std::string>& map, pos_wi
 
 int main()
 {
-	// 000000ms  : data in + parsing
-	// 000000ms  : part1
-	// 000000ms  : part2
+	// 5.0176ms  : data in + parsing
+	// 3.0800ms  : part1
+	// 75.689ms  : part2
 	run_program(__TEST_PATH, u8"test input", 1);
 	run_program(__INPUT_PATH, u8"input day20", 100);
 	return 0;
