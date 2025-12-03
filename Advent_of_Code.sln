@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.11.35431.28
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2023", "2023", "{6B66E2D4-204A-4D06-9916-0B77C223C1F3}"
 EndProject
@@ -11,8 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "others", "others", "{C28672
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		other\boilerplate.cpp = other\boilerplate.cpp
-		change_input.txt = change_input.txt
-		change_test.txt = change_test.txt
+		other\change_input.txt = other\change_input.txt
+		other\change_test.txt = other\change_test.txt
 		other\include_everything.h = other\include_everything.h
 		other\input.txt = other\input.txt
 		other\output.txt = other\output.txt
@@ -109,6 +109,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "24_crossed_wires", "2024\24_crossed_wires\24_crossed_wires.vcxproj", "{381EFCE1-AFEA-4ABC-848F-87486B40090B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "25_code_chronicles", "2024\25_code_chronicles\25_code_chronicles.vcxproj", "{810ADAD1-8055-4159-93D6-092008F05B0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2025", "2025", "{02D3439B-317A-4874-87C3-178520033565}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_secret_entrance", "2025\01_secret_entrance\01_secret_entrance.vcxproj", "{9FD657CF-EC08-4989-9CE1-6A28031C0966}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_gift_shop", "2025\02_gift_shop\02_gift_shop.vcxproj", "{5850D4EE-417C-4374-89AF-0D6C3AD857A2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_boilerplate", "2025\03_lobby\03_lobby.vcxproj", "{C993C500-4084-4DAA-80EA-C86D8E74769C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -478,6 +486,30 @@ Global
 		{810ADAD1-8055-4159-93D6-092008F05B0D}.Release|x64.Build.0 = Release|x64
 		{810ADAD1-8055-4159-93D6-092008F05B0D}.Release|x86.ActiveCfg = Release|Win32
 		{810ADAD1-8055-4159-93D6-092008F05B0D}.Release|x86.Build.0 = Release|Win32
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Debug|x64.ActiveCfg = Debug|x64
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Debug|x64.Build.0 = Debug|x64
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Debug|x86.ActiveCfg = Debug|Win32
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Debug|x86.Build.0 = Debug|Win32
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Release|x64.ActiveCfg = Release|x64
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Release|x64.Build.0 = Release|x64
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Release|x86.ActiveCfg = Release|Win32
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966}.Release|x86.Build.0 = Release|Win32
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Debug|x64.ActiveCfg = Debug|x64
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Debug|x64.Build.0 = Debug|x64
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Debug|x86.ActiveCfg = Debug|Win32
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Debug|x86.Build.0 = Debug|Win32
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Release|x64.ActiveCfg = Release|x64
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Release|x64.Build.0 = Release|x64
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Release|x86.ActiveCfg = Release|Win32
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2}.Release|x86.Build.0 = Release|Win32
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Debug|x64.ActiveCfg = Debug|x64
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Debug|x64.Build.0 = Debug|x64
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Debug|x86.ActiveCfg = Debug|Win32
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Debug|x86.Build.0 = Debug|Win32
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Release|x64.ActiveCfg = Release|x64
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Release|x64.Build.0 = Release|x64
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Release|x86.ActiveCfg = Release|Win32
+		{C993C500-4084-4DAA-80EA-C86D8E74769C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -528,6 +560,9 @@ Global
 		{56ED7DD7-EAB5-49E3-A697-DA2A0D9F282B} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 		{381EFCE1-AFEA-4ABC-848F-87486B40090B} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
 		{810ADAD1-8055-4159-93D6-092008F05B0D} = {9C63F9AA-9C7D-4180-812E-24DD3AB46F2A}
+		{9FD657CF-EC08-4989-9CE1-6A28031C0966} = {02D3439B-317A-4874-87C3-178520033565}
+		{5850D4EE-417C-4374-89AF-0D6C3AD857A2} = {02D3439B-317A-4874-87C3-178520033565}
+		{C993C500-4084-4DAA-80EA-C86D8E74769C} = {02D3439B-317A-4874-87C3-178520033565}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {383C9ADD-2BD7-4EE3-AB80-C1F7D63C29CD}
