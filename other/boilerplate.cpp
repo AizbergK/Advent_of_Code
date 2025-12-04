@@ -2,9 +2,11 @@
 import std;
 
 void run_program(std::string input, std::u8string comment);
-void read_data(std::string& input_path);
-int part_one();
-int part_two();
+void read_data(std::string& input_path, data_type& data);
+int part_one(data_type& data);
+int part_two(data_type& data);
+
+typedef int data_type;
 
 int main()
 {
@@ -22,16 +24,18 @@ void run_program(std::string input, std::u8string comment)
 	long long part_one_result{ 0 }, part_two_result{ 0 };
 	TimerUtility input_timer, part1_timer, part2_timer;
 
+	data_type data;
+
 	input_timer.startTimer();
-	read_data(input);
+	read_data(input, data);
 	input_timer.getDuration(u8"input " + comment);
 
 	part1_timer.startTimer();
-	part_one_result = part_one();
+	part_one_result = part_one(data);
 	part1_timer.getDuration(u8"part1");
 
 	part2_timer.startTimer();
-	part_two_result = part_two();
+	part_two_result = part_two(data);
 	part2_timer.getDuration(u8"part2");
 
 	std::println("{0}", part_one_result);
@@ -46,7 +50,7 @@ void read_data(std::string &input_path)
 
 }
 
-int part_one()
+int part_one(data_type& data)
 {
 	int result{ 0 };
 
@@ -55,7 +59,7 @@ int part_one()
 	return result;
 }
 
-int part_two()
+int part_two(data_type& data)
 {
 	int result{ 0 };
 
