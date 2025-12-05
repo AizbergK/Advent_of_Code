@@ -8,11 +8,11 @@ int part_two(std::vector<std::string>& data);
 
 int main()
 {
-	// 179.10µs : input input day15
+	// 179.10µs : input input day04
 	// 212.10µs : part1
 	// 3.7431ms : part2
 	run_program(__TEST_PATH, u8"test input");
-	run_program(__INPUT_PATH, u8"input day15");
+	run_program(__INPUT_PATH, u8"input day04");
 	return 0;
 }
 

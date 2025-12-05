@@ -1,12 +1,12 @@
 #include "../../other/include_everything.h"
 import std;
 
+typedef int data_type;
+
 void run_program(std::string input, std::u8string comment);
 void read_data(std::string& input_path, data_type& data);
-int part_one(data_type& data);
-int part_two(data_type& data);
-
-typedef int data_type;
+std::uint64_t part_one(data_type& data);
+std::uint64_t part_two(data_type& data);
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
 void run_program(std::string input, std::u8string comment)
 {
 	
-	long long part_one_result{ 0 }, part_two_result{ 0 };
+	std::uint64_t part_one_result{ 0 }, part_two_result{ 0 };
 	TimerUtility input_timer, part1_timer, part2_timer;
 
 	data_type data;
@@ -43,25 +43,25 @@ void run_program(std::string input, std::u8string comment)
 	std::println();
 }
 
-void read_data(std::string &input_path)
+void read_data(std::string &input_path, data_type& data)
 {
 	std::ifstream input(input_path);
 
 
 }
 
-int part_one(data_type& data)
+std::uint64_t part_one(data_type& data)
 {
-	int result{ 0 };
+	std::uint64_t result{ 0 };
 
 
 
 	return result;
 }
 
-int part_two(data_type& data)
+std::uint64_t part_two(data_type& data)
 {
-	int result{ 0 };
+	std::uint64_t result{ 0 };
 
 
 

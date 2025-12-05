@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="05_boilerplate.cpp">
+    <ClCompile Include="05_cafeteria.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
