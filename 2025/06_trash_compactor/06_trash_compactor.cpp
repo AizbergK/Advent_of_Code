@@ -7,12 +7,11 @@ void run_program(std::string input, std::u8string comment);
 void read_data(std::string& input_path, data_type& data);
 std::uint64_t part_one(data_type& data);
 std::uint64_t part_two(data_type& data);
-
 int main()
 {
-	// 144.10탎 : input input day06
-	// 45.700탎 : part1
-	// 171.70탎 : part2
+	// 137.80탎 : input input day06
+	// 40.200탎 : part1
+	// 43.800탎 : part2
 	run_program(__TEST_PATH, u8"test input");
 	run_program(__INPUT_PATH, u8"input day06");
 	return 0;
@@ -61,19 +60,18 @@ std::uint64_t part_one(data_type& data)
 	std::vector<char> vec_ops{  };
 	for (char c : data.back())
 	{
-		if (c != ' ') {
+		if (c != ' ') 
 			vec_ops.push_back(c == '+');
-		}
 	}
 
 	std::vector<std::uint64_t> vec_acc{  };
-	std::vector<std::uint64_t> vec_tmp{  };
+	std::vector<std::uint16_t> vec_tmp{  };
 	vec_acc.resize(vec_ops.size());
 	vec_tmp.resize(vec_ops.size());
 
 	const char* ptr{ data[0].data() };
 	const char const* end{ ptr + data[0].size() };
-	for (int i = 0; ptr < end; ptr++) 
+	for (int i = 0; ptr < end; ptr++)
 	{
 		if (*ptr != ' ')
 		{
@@ -83,7 +81,7 @@ std::uint64_t part_one(data_type& data)
 		}
 	}
 
-	for(int i{ 1 }; i < data.size() - 1; ++i)
+	for (int i{ 1 }; i < data.size() - 1; ++i)
 	{
 		const char* ptr{ data[i].data() };
 		const char const* end{ ptr + data[i].size() };
@@ -99,14 +97,8 @@ std::uint64_t part_one(data_type& data)
 
 		for (int j{ 0 }; j < vec_acc.size(); ++j)
 		{
-			if (vec_ops[j])
-			{
-				vec_acc[j] += vec_tmp[j];
-			}
-			else
-			{
-				vec_acc[j] *= vec_tmp[j];
-			}
+			vec_acc[j] += vec_tmp[j] * vec_ops[j];
+			vec_acc[j] *= vec_ops[j] + vec_tmp[j] * (1 - vec_ops[j]);
 		}
 	}
 
@@ -119,42 +111,55 @@ std::uint64_t part_two(data_type& data)
 {
 	std::uint64_t result{ 0 };
 
+	std::vector<char> vec_ops{  };
 	for (int i{ 1 }; i < data.back().size(); ++i)
 	{
 		if (data.back()[i] == ' ') data.back()[i] = data.back()[i - 1];
 	}
-
-	std::vector<char> digits{  };
-	digits.resize(data.size());
-
-	std::uint64_t line_result{ 0 };
-	for(int i{ 0 }; i < data[0].size(); ++i)
+	for (char c : data.back())
 	{
-		std::uint32_t number{ 0 };
-		
-		for (int j{ 0 }; j < digits.size(); ++j)
-		{
-			digits[j] = data[j][i];
-		}
-		for (auto ch : digits)
-		{
-			if (std::isdigit(ch))
-			{
-				number *= 10;
-				number += ch - '0';
-			}
-		}
-		if (number == 0)
-		{
-			result += line_result;
-			line_result = 0;
-			continue;
-		}
-		if (line_result == 0)			line_result = number;
-		else if (digits.back() == '+')	line_result += number;
-		else							line_result *= number;
+		if (c != ' ') 
+			vec_ops.push_back(c == '+');
 	}
-	result += line_result;
+
+	std::vector<std::uint16_t> vec_acc{  };
+	vec_acc.resize(vec_ops.size());
+
+	for (int i{ 0 }; i < vec_acc.size(); ++i)
+	{
+		vec_acc[i] = (data[0][i] != ' ') * (data[0][i] - '0');
+
+	}
+
+	for(int i{ 1 }; i < data.size() - 1; ++i)
+	{
+		for (int j{ 0 }; j < vec_acc.size(); ++j)
+		{
+			bool dig{ data[i][j] != ' ' };
+			vec_acc[j] *= (1 - dig) + 10 * dig;
+			vec_acc[j] += dig * (data[i][j] - '0');
+		}
+	}
+
+	uint64_t mul_acc{ 1 };
+	for (int i{ 0 }; i < vec_acc.size(); ++i)
+	{
+		if (vec_acc[i] == 0)
+		{
+			result += mul_acc * (mul_acc != 1);
+			mul_acc = 1;
+		}
+		else if (vec_ops[i] == 1)
+		{
+			result += vec_acc[i];
+		}
+		else
+		{
+			mul_acc *= vec_acc[i];
+		}
+
+	}
+	result += mul_acc * (mul_acc != 1);
 
 	return result;
 }
