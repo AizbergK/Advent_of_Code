@@ -24,7 +24,7 @@
     <ProjectGuid>{AC0FB50D-4D2F-48C4-A26C-B2D559E7AD59}</ProjectGuid>
     <RootNamespace>My04ceressearch</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>04_boilerplate</ProjectName>
+    <ProjectName>04_printing_department</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

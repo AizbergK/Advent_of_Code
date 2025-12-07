@@ -24,7 +24,7 @@
     <ProjectGuid>{6310D2F5-1F49-4C68-BA63-E5E3BB40305F}</ProjectGuid>
     <RootNamespace>My05printqueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>05_boilerplate</ProjectName>
+    <ProjectName>05_cafeteria</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

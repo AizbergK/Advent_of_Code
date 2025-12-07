@@ -27,7 +27,7 @@
     <ProjectGuid>{C993C500-4084-4DAA-80EA-C86D8E74769C}</ProjectGuid>
     <RootNamespace>My03mullitover</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>03_boilerplate</ProjectName>
+    <ProjectName>03_lobby</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

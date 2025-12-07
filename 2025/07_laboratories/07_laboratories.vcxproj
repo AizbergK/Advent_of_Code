@@ -24,7 +24,7 @@
     <ProjectGuid>{F8672427-2990-4224-90E3-45CC9CCAB8AC}</ProjectGuid>
     <RootNamespace>My07BridgeRepair</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>07_boilerplate</ProjectName>
+    <ProjectName>07_laboratories</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="07_boilerplate.cpp" />
+    <ClCompile Include="07_laboratories.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

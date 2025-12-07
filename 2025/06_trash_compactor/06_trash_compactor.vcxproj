@@ -24,7 +24,7 @@
     <ProjectGuid>{81CE0286-0F11-4E31-96B8-E895C765EEC1}</ProjectGuid>
     <RootNamespace>My06guardgallivant</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>06_boilerplate</ProjectName>
+    <ProjectName>06_trash_compactor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
