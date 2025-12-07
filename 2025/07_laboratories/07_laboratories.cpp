@@ -1,7 +1,7 @@
 #include "../../other/include_everything.h"
 import std;
 
-typedef std::vector<std::string> data_type;
+typedef std::vector<std::uint8_t> data_type;
 
 void run_program(std::string input, std::u8string comment);
 void read_data(std::string& input_path, data_type& data);
@@ -10,11 +10,11 @@ std::uint64_t part_two(data_type& data);
 
 int main()
 {
-	// 178.80탎 : input input day15
-	// 16.100탎 : part1
-	// 14.800탎 : part2
+	// 142.10탎 : input input day07
+	// 1.1000탎 : part1
+	// 1.2000탎 : part2
 	run_program(__TEST_PATH, u8"test input");
-	run_program(__INPUT_PATH, u8"input day15");
+	run_program(__INPUT_PATH, u8"input day07");
 	return 0;
 }
 
@@ -52,7 +52,10 @@ void read_data(std::string& input_path, data_type& data)
 	std::getline(input, line);
 	while (std::getline(input, line))
 	{
-		data.emplace_back(line);
+		for (int i{ 0 }; i < line.size(); ++i)
+		{
+			if (line[i] == '^') data.emplace_back(i);
+		}
 		std::getline(input, line);
 	}
 }
@@ -61,21 +64,15 @@ std::uint64_t part_one(data_type& data)
 {
 	std::uint64_t result{ 0 };
 
-	std::vector<int> beam_memo(data[0].size(), 0);
-	beam_memo[data[0].size() / 2] = 1;
+	std::array<std::uint8_t, 141> beam_memo = { 0 };
+	beam_memo[data[0]] = 1;
 
-	for (int i{ 0 }; i < data.size(); ++i)
+	for (auto pos : data)
 	{
-		for (int j{ 0 }; j < data[0].size(); ++j)
-		{
-			if (data[i][j] == '^' && beam_memo[j])
-			{
-				++result;
-				beam_memo[j - 1] += beam_memo[j];
-				beam_memo[j + 1] += beam_memo[j];
-				beam_memo[j] = 0;
-			}
-		}
+		result += beam_memo[pos];
+		beam_memo[pos - 1] |= beam_memo[pos];
+		beam_memo[pos + 1] |= beam_memo[pos];
+		beam_memo[pos] = 0;
 	}
 
 	return result;
@@ -83,25 +80,18 @@ std::uint64_t part_one(data_type& data)
 
 std::uint64_t part_two(data_type& data)
 {
-	std::uint64_t result{ 0 };
+	std::uint64_t result{ 1 };
 
-	std::vector<std::uint64_t> beam_memo(data[0].size(), 0);
-	beam_memo[data[0].size() / 2] = 1;
+	std::array<std::uint64_t, 141> beam_memo = { 0 };
+	beam_memo[data[0]] = 1;
 
-	for (int i{ 0 }; i < data.size(); ++i)
+	for (auto pos : data)
 	{
-		for (int j{ 0 }; j < data[0].size(); ++j)
-		{
-			if (data[i][j] == '^' && beam_memo[j])
-			{
-				beam_memo[j - 1] += beam_memo[j];
-				beam_memo[j + 1] += beam_memo[j];
-				beam_memo[j] = 0;
-			}
-		}
+		result += beam_memo[pos];
+		beam_memo[pos - 1] += beam_memo[pos];
+		beam_memo[pos + 1] += beam_memo[pos];
+		beam_memo[pos] = 0;
 	}
-
-	result = std::accumulate(beam_memo.begin(), beam_memo.end(), 0ULL);
 
 	return result;
 }
