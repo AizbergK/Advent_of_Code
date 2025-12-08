@@ -24,7 +24,7 @@
     <ProjectGuid>{6A6D2BAB-1AF6-4D28-95E4-B7AA08D7DF3F}</ProjectGuid>
     <RootNamespace>My08resonantcollinearity</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>08_boilerplate</ProjectName>
+    <ProjectName>08_playground</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="08_boilerplate.cpp" />
+    <ClCompile Include="08_playground.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
