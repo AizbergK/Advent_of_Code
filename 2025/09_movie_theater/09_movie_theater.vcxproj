@@ -24,7 +24,7 @@
     <ProjectGuid>{EC60F5A0-0DDB-48FD-8838-1A4DB8D6632F}</ProjectGuid>
     <RootNamespace>My09diskfragmenter</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>09_boilerplate</ProjectName>
+    <ProjectName>09_movie_theater</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="09_boilerplate.cpp" />
+    <ClCompile Include="09_movie_theater.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
