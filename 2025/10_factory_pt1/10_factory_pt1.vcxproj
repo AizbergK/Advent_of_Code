@@ -24,7 +24,7 @@
     <ProjectGuid>{49A28746-4387-47EA-90E8-C0EC63AB61D1}</ProjectGuid>
     <RootNamespace>My10hoofit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>10_boilerplate</ProjectName>
+    <ProjectName>10_factory_pt1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="10_boilerplate.cpp" />
+    <ClCompile Include="10_factory_pt1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

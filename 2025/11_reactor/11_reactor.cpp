@@ -10,9 +10,9 @@ std::int64_t part_two(data_type& data);
 
 int main()
 {
-	// 000000ms  : data in + parsing
-	// 000000ms  : part1
-	// 000000ms  : part2
+	// 345.90µs : input input day11
+	// 42.400µs : part1
+	// 507.60µs : part2
 	run_program(__TEST_PATH, u8"test input");
 	run_program(__INPUT_PATH, u8"input day11");
 	return 0;
