@@ -24,7 +24,7 @@
     <ProjectGuid>{B67D8956-ED93-4F07-875C-F59ABAF7573F}</ProjectGuid>
     <RootNamespace>My11plutonianpebbles</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>11_boilerplate</ProjectName>
+    <ProjectName>11_reactor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="11_boilerplate.cpp" />
+    <ClCompile Include="11_reactor.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11_boilerplate.cpp">
+    <ClCompile Include="11_reactor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
