@@ -24,7 +24,7 @@
     <ProjectGuid>{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}</ProjectGuid>
     <RootNamespace>My12gardengroups</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>12_boilerplate</ProjectName>
+    <ProjectName>12_christmas_tree_farm</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -132,7 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="12_boilerplate.cpp" />
+    <ClCompile Include="12_christmas_tree_farm.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

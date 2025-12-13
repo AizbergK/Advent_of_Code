@@ -136,6 +136,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_factory_pt1", "2025\10_f
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "10_factory_pt2", "2025\10_factory_pt2\10_factory_pt2.pyproj", "{C7150C6E-C3F9-483D-9006-79729525F052}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_christmas_tree_farm", "2025\12_christmas_tree_farm\12_christmas_tree_farm.vcxproj", "{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -824,6 +826,18 @@ Global
 		{C7150C6E-C3F9-483D-9006-79729525F052}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7150C6E-C3F9-483D-9006-79729525F052}.Release|x64.ActiveCfg = Release|Any CPU
 		{C7150C6E-C3F9-483D-9006-79729525F052}.Release|x86.ActiveCfg = Release|Any CPU
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|Any CPU.Build.0 = Debug|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|x64.ActiveCfg = Debug|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|x64.Build.0 = Debug|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Debug|x86.Build.0 = Debug|Win32
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|Any CPU.ActiveCfg = Release|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|Any CPU.Build.0 = Release|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|x64.ActiveCfg = Release|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|x64.Build.0 = Release|x64
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|x86.ActiveCfg = Release|Win32
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -886,6 +900,7 @@ Global
 		{B67D8956-ED93-4F07-875C-F59ABAF7573F} = {02D3439B-317A-4874-87C3-178520033565}
 		{49A28746-4387-47EA-90E8-C0EC63AB61D1} = {02D3439B-317A-4874-87C3-178520033565}
 		{C7150C6E-C3F9-483D-9006-79729525F052} = {02D3439B-317A-4874-87C3-178520033565}
+		{43BEF3A7-62A3-4EB6-9D31-7EDB109334D4} = {02D3439B-317A-4874-87C3-178520033565}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {383C9ADD-2BD7-4EE3-AB80-C1F7D63C29CD}

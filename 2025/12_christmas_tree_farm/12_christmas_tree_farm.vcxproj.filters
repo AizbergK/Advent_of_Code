@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="12_boilerplate.cpp">
+    <ClCompile Include="12_christmas_tree_farm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
