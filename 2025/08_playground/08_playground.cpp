@@ -17,9 +17,9 @@ std::uint64_t part_two(data_type& data);
 
 int main()
 {
-	// 000000ms  : data in + parsing
-	// 000000ms  : part1
-	// 000000ms  : part2
+	// 176.90µs : input input day08
+	// 17.293ms : part1
+	// 43.956ms : part2
 	run_program(__TEST_PATH, u8"test input", true);
 	run_program(__INPUT_PATH, u8"input day08", false);
 	return 0;
